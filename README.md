@@ -74,37 +74,24 @@ With Autonmous Vehciles being increasingly deployed to public roads, constructio
 
 # Team members (Penn State Only)
 ***
-This section introduces Penn State team members. Please click to see details.
 <details closed> 
 <summary> Click to see/unsee </summary>
 
 * Project PIs
   
-**Dr. Sean Brennan**
-<br>
-<img src="https://github.com/ForgetfulDatabases/ForgetfulDatabases.github.io/blob/main/assets/images/brennan-sean_2017.jpg?raw=true" height = "260" width= "200">   
+  Dr. Sean Brennan  
+<img src="https://github.com/ForgetfulDatabases/ForgetfulDatabases.github.io/blob/main/assets/images/brennan-sean_2017.jpg?raw=true" height = "260" width= "200">  
+
+ 
 
 
  * Students
 
- **Maddipatla Satya Prasad**   |  **Wushuang Bai**             | **Liming Gao**                | **Xinyu Cao**
+ Maddipatla Satya Prasad   |  Wushuang Bai             | Liming Gao                | Xinyu Cao
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src ="https://github.com/psuadsworkzone/psuadsworkzone.github.io/blob/main/SatyaPrasadMaddipatla.jpg?raw=true" height = "200" width= "200">  |<img src="https://github.com/psuadsworkzone/psuadsworkzone.github.io/blob/main/WushuangBai_photo.jpg?raw=true" height = "200" width= "200"> | <img src="https://user-images.githubusercontent.com/66030812/148875266-8b5677b8-01df-46fd-8fbd-e02e0ea36858.jpg?raw=true" height = "200" width= "200"> |  <img src="https://github.com/psuadsworkzone/psuadsworkzone.github.io/blob/main/XinyuCao.jpg?raw=true" height = "200" width= "200">
-**Artkaew, Phakphum**   |  **George Nathan Bodenschatz** | **Bhavya Jain**             | **Justin Kerr**
-<img src ="https://github.com/ivsg-psu/Projects_PennDOTADSConstructionZones/blob/main/Documents/Images/Treasurer_Phakphum_Artkaew.jpeg" height = "200" width= "200">  |<img src="https://github.com/ivsg-psu/Projects_PennDOTADSConstructionZones/blob/main/Documents/Images/Bodenschatz%20George%20Nathan.jpg" height = "200" width= "200"> | <img src="https://github.com/ivsg-psu/Projects_PennDOTADSConstructionZones/blob/main/Documents/Images/Bhavya%20Jain.jpeg" height = "200" width= "200"> |  <img src="https://github.com/ivsg-psu/Projects_PennDOTADSConstructionZones/blob/main/Documents/Images/Justin%20Kerr.jpeg" height = "200" width= "200">|  <img src="https://github.com/ivsg-psu/Projects_PennDOTADSConstructionZones/blob/main/Documents/Images/Putz%20Marcus%20Jun%20Wei%20Ng.jpg" height = "400" width= "200">
-**Marcus Jun Wei Ng Putz** | **Yao Sun**
-|  <img src="https://github.com/ivsg-psu/Projects_PennDOTADSConstructionZones/blob/main/Documents/Images/Putz%20Marcus%20Jun%20Wei%20Ng.jpg" height = "200" width= "200">|  <img src="https://github.com/ivsg-psu/Projects_PennDOTADSConstructionZones/blob/main/Documents/Images/Sun%20Yao.jpg" height = "200" width= "200">
 
 </details>
-
-
-
-
-
-
-
-
-
 
 
 # Project activity by year
