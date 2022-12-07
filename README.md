@@ -74,9 +74,7 @@ With Autonmous Vehciles being increasingly deployed to public roads, constructio
 
 # Team members (Penn State Only)
 ***
-<details closed> 
-<summary> Click to see/unsee </summary>
-
+ 
 * Project PIs
   
   Dr. Sean Brennan  
@@ -91,7 +89,6 @@ With Autonmous Vehciles being increasingly deployed to public roads, constructio
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src ="https://github.com/psuadsworkzone/psuadsworkzone.github.io/blob/main/SatyaPrasadMaddipatla.jpg?raw=true" height = "200" width= "200">  |<img src="https://github.com/psuadsworkzone/psuadsworkzone.github.io/blob/main/WushuangBai_photo.jpg?raw=true" height = "200" width= "200"> | <img src="https://user-images.githubusercontent.com/66030812/148875266-8b5677b8-01df-46fd-8fbd-e02e0ea36858.jpg?raw=true" height = "200" width= "200"> |  <img src="https://github.com/psuadsworkzone/psuadsworkzone.github.io/blob/main/XinyuCao.jpg?raw=true" height = "200" width= "200">
 
-</details>
 
 
 # Project activity by year
