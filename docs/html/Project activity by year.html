@@ -25,7 +25,9 @@
         <script src="_static/doctools.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Project activity by topic" href="Project activity by topic.html" />
+    <link rel="prev" title="Introduction to the Project" href="Introduction to the Project.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,11 +48,32 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Project activity by year</a></li>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction to the Project.html">Introduction to the Project</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Project activity by year</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#year-1">Year 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#time-synchonization">Time Synchonization:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#camera-subsystems-redesign">Camera subsystems redesign:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lidar-subsystems-redesign">LiDAR subsystems redesign:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#redesign-of-other-hardware-subsystems">Redesign of other hardware subsystems:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-parsing">Data parsing:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#prepare-tools-for-traffic-simulation-including">Prepare tools for traffic simulation including:</a></li>
 </ul>
-</div>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#year-2">Year 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#simulating-construction-scenarios">Simulating construction scenarios:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#year-3">Year 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#year-4">Year 4</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Project activity by topic.html">Project activity by topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Project activity by modality.html">Project activity by modality</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Project activity by member.html">Project activity by member</a></li>
+</ul>
+
         </div>
       </div>
     </nav>
@@ -77,12 +100,97 @@
              
   <div class="section" id="project-activity-by-year">
 <h1>Project activity by year<a class="headerlink" href="#project-activity-by-year" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="year-1">
+<h2>Year 1<a class="headerlink" href="#year-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="time-synchonization">
+<h3>Time Synchonization:<a class="headerlink" href="#time-synchonization" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_TypicalHardwareSetups_TriggerCameraUsingExternalSignal">FieldDataCollection_TypicalHardwareSetups_TriggerCameraUsingExternalSignal</a>:Methods to externally trigger FLIR cameras to external trigger signals.</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_TypicalHardwareSetups_TimeSync_ArduinoUsingGPSPPS">FieldDataCollection_TypicalHardwareSetups_TimeSync_ArduinoUsingGPSPPS</a>: Producing tight time-trigger pulses (less than 20 microseconds jitter) via Arduinos.</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_TypicalHardwareSetups_TimeSyncTriggerBox">FieldDataCollection_TypicalHardwareSetups_TimeSyncTriggerBox</a>: CAD models for trigger box.</li>
+</ul>
+</div>
+<div class="section" id="camera-subsystems-redesign">
+<h3>Camera subsystems redesign:<a class="headerlink" href="#camera-subsystems-redesign" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_TypicalHardwareSetups_TriggerCameraUsingExternalSignal">Hardware_MappingVanHardware_Camera</a>: Remounting the cameras to improve regidity, water intrusion, and hardware faults</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/ivsg_master/tree/master/CameraCalibration_wiki">Camera Calibration</a> : Methods used to calibrate the camera system</li>
+</ul>
+</div>
+<div class="section" id="lidar-subsystems-redesign">
+<h3>LiDAR subsystems redesign:<a class="headerlink" href="#lidar-subsystems-redesign" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_LiDAR">Hardware_MappingVanHardware_LiDAR</a>: Documents of LiDAR specs</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_TypicalHardwareSetups_LIDARs_CeptonX90Install">FieldDataCollection_TypicalHardwareSetups_LIDARs_CeptonX90Install</a>: Procedure of installing CeptonX90 LiDAR</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_TypicalHardwareSetups_LIDARs_VelodyneVLP16Install">FieldDataCollection_TypicalHardwareSetups_LIDARs_VelodyneVLP16Install</a>: Procedure of installing VelodyneVLP16 LiDAR</li>
+</ul>
+</div>
+<div class="section" id="redesign-of-other-hardware-subsystems">
+<h3>Redesign of other hardware subsystems:<a class="headerlink" href="#redesign-of-other-hardware-subsystems" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_Encoder">Hardware_MappingVanHardware_Encoder</a>: Setup of encoders</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_Radar">Hardware_MappingVanHardware_Radar</a>: Setup of Radar</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_PowerSystem">Hardware_MappingVanHardware_PowerSystem</a>: Setup of power system</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_GPS">Hardware_MappingVanHardware_GPS</a>: Setup of GPS</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_IMU">Hardware_MappingVanHardware_IMU</a>: Setup of IMU</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_SteeringSystem">Hardware_MappingVanHardware_SteeringSystem</a>: Setup of steering system</li>
+</ul>
+</div>
+<div class="section" id="data-parsing">
+<h3>Data parsing:<a class="headerlink" href="#data-parsing" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_DataCollectionProcedures_ParseRawDataToDatabase">FieldDataCollection_DataCollectionProcedures_ParseRawDataToDatabase</a>: Parse raw data (.bag) to raw data database</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_DataCollectionProcedures_DataTransferWithDMS">FieldDataCollection_DataCollectionProcedures_DataTransferWithDMS</a>:Transfer data to PennDOT DMS</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_DataCollectionProcedures_AutomatingDataTransferToDMSUsingCommandLine">FieldDataCollection_DataCollectionProcedures_AutomatingDataTransferToDMSUsingCommandLine</a>: Transfer data to PennDOT DMS using command line tools</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_DataCollectionProcedures_StitchingImagesToVideo">FieldDataCollection_DataCollectionProcedures_StitchingImagesToVideo</a>:Stitching parsed images into a video</li>
+</ul>
+</div>
+<div class="section" id="prepare-tools-for-traffic-simulation-including">
+<h3>Prepare tools for traffic simulation including:<a class="headerlink" href="#prepare-tools-for-traffic-simulation-including" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/ivsg-psu/TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA">TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA</a>: Launch page to get started with CARLA</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO">TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO</a>:Launch page to get started with SUMO</li>
+<li><a class="reference external" href="https://github.com/ivsg-psu/TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA-SUMOCosimulation">TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA-SUMOCosimulation</a>: Launch page to get started with CARLA-SUMO cosimulation</li>
+</ul>
+</div>
+</div>
+<div class="section" id="year-2">
+<h2>Year 2<a class="headerlink" href="#year-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="simulating-construction-scenarios">
+<h3>Simulating construction scenarios:<a class="headerlink" href="#simulating-construction-scenarios" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/ivsg-psu/TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO/blob/main/Documents/Simulating%20test%20track%20in%20SUMO.pptx">Simulating a traffic flow on Penn State test track</a>: The work in this area involves information to guide how to simulate a traffic flow on Penn State test track.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="year-3">
+<h2>Year 3<a class="headerlink" href="#year-3" title="Permalink to this headline">¶</a></h2>
+<p>To be added:</p>
+<ul class="simple">
+<li>Conduct closed track testing</li>
+<li>Collect/Process/Upload/Analyze closed track test data</li>
+</ul>
+</div>
+<div class="section" id="year-4">
+<h2>Year 4<a class="headerlink" href="#year-4" title="Permalink to this headline">¶</a></h2>
+<p>To be added:</p>
+<ul class="simple">
+<li>Set up work zone in live on-road</li>
+<li>Map work zone in live on-road</li>
+<li>Process/Upload map</li>
+<li>Conduct live on-road testing</li>
+<li>Collect/Process/Upload/Analyze live on-road testing data</li>
+</ul>
+</div>
 </div>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Introduction to the Project.html" class="btn btn-neutral float-left" title="Introduction to the Project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Project activity by topic.html" class="btn btn-neutral float-right" title="Project activity by topic" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

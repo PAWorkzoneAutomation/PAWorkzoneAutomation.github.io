@@ -6,6 +6,8 @@
 Introduction to the Project
 ================================
 
+.. image:: Images/penndot.png 
+
 Welcome to the Penn State wiki page for details on the Automated Driving System Workzone project. This page presents details primarily focused on the Penn State team activity. Additional details can be found at the PennDOT's public ADS page, which can be found `here`_.
 
 The Motivation for the Safe Integration of Automated Vehicles into Work Zones
@@ -41,7 +43,26 @@ Team members
 
 * Project PIs 
 
++----------------------------------------+----------------------------------------+------------------------------------------+
+| .. image:: Images/sean_withtitle.jpg   | .. image:: Images/eric_withtitle.jpg   | .. image:: Images/vikash_withtitle.jpg   |
++========================================+========================================+==========================================+
+| .. image:: Images/guler_withtitle.jpg  | .. image:: Images/vijay_withtitle.jpg  | .. image:: Images/raj_withtitle.png      |
++----------------------------------------+----------------------------------------+------------------------------------------+
+
+* Students
+
++---------------------------------------------------------+
+| .. image:: Images/wushuang_withtitle.jpg                |
+|   :scale: 75                                            |
++---------------------------------------------------------+
+
+Funding
+------------
+This project is funded by USDOT via Pennsylvania Department of Transportation under NOFO # 693JJ319NF00001.
+
 
 
 
 .. _here: https://www.penndot.gov/ProjectAndPrograms/ResearchandTesting/Autonomous%20_Vehicles/Pages/ADS-Demonstration.aspx
+
+
