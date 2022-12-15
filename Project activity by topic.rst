@@ -50,8 +50,9 @@ Data parsing:
 * `FieldDataCollection_DataCollectionProcedures_StitchingImagesToVideo`_:Stitching parsed images into a video
 
 Workzone instrumentation:
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 To be added:
+
 * V2X
 * Smart traffic cone
 * Vests
