@@ -6,10 +6,9 @@
 Project activity by modality
 ================================
 
-Simulation
------------------------------
-Prepare tools for traffic simulation including:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Traffic and Vehicle Simulation:
+--------------------------------
+
 * `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA`_: Launch page to get started with CARLA  
 * `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO`_:Launch page to get started with SUMO 
 * `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA-SUMOCosimulation`_: Launch page to get started with CARLA-SUMO cosimulation 

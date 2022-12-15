@@ -44,9 +44,9 @@ Team members
 * Project PIs 
 
 +----------------------------------------+----------------------------------------+------------------------------------------+
-| .. image:: Images/sean_withtitle.jpg   | .. image:: Images/eric_withtitle.jpg   | .. image:: Images/vikash_withtitle.jpg   |
+| .. image:: Images/vijay_withtitle.jpg  | .. image:: Images/raj_withtitle.png    | .. image:: Images/sean_withtitle.jpg     |
 +========================================+========================================+==========================================+
-| .. image:: Images/guler_withtitle.jpg  | .. image:: Images/vijay_withtitle.jpg  | .. image:: Images/raj_withtitle.png      |
+| .. image:: Images/vikash_withtitle.jpg | .. image:: Images/eric_withtitle.jpg   | .. image:: Images/ilgin_withtitle.jpg    |
 +----------------------------------------+----------------------------------------+------------------------------------------+
 
 * Students
@@ -56,6 +56,23 @@ Team members
 |   :scale: 75                                            |
 +---------------------------------------------------------+
 
+Groups with Related Interests
+--------------------------------------
+
+* `Welcome to OpenCDA’s documentation!`_ : A SIMULATION tool integrated with a prototype cooperative driving automation (CDA; see SAE J3216) pipeline as well as regular automated driving components (e.g., perception, localization, planning, control).
+
+Publications:
+-------------------
+To be added 
+
+
+Events:
+-------------
+To be added 
+
+
+
+
 Funding
 ------------
 This project is funded by USDOT via Pennsylvania Department of Transportation under NOFO # 693JJ319NF00001.
@@ -64,5 +81,5 @@ This project is funded by USDOT via Pennsylvania Department of Transportation un
 
 
 .. _here: https://www.penndot.gov/ProjectAndPrograms/ResearchandTesting/Autonomous%20_Vehicles/Pages/ADS-Demonstration.aspx
-
+.. _Welcome to OpenCDA’s documentation!: https://opencda-documentation.readthedocs.io/en/latest/index.html
 

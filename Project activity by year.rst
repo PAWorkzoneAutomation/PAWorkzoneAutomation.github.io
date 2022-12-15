@@ -9,46 +9,87 @@ Project activity by year
 Year 1
 ---------------------------------------------------------
 
-Time Synchonization: 
+Traffic and Vehicle Simulations: 
+-----------------------------------
+* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA`_: Launch page to get started with CARLA  
+* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO`_:Launch page to get started with SUMO 
+* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA-SUMOCosimulation`_: Launch page to get started with CARLA-SUMO cosimulation  
+
+
+Mapping:
+---------------
+
+About the Mapping Van: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+To be added
+
+Hardware: 
 ~~~~~~~~~~~~~~~~~~~~~
-* `FieldDataCollection_TypicalHardwareSetups_TriggerCameraUsingExternalSignal`_: Methods to externally trigger FLIR cameras to external trigger signals. 
+
+Power System: 
+
+* `Hardware_MappingVanHardware_PowerSystem`_: Setup of power system  
+
+Time Synchonization: 
+
+* `FieldDataCollection_TypicalHardwareSetups_TriggerCameraUsingExternalSignal`_:Methods to externally trigger FLIR cameras to external trigger signals. 
 * `FieldDataCollection_TypicalHardwareSetups_TimeSync_ArduinoUsingGPSPPS`_: Producing tight time-trigger pulses (less than 20 microseconds jitter) via Arduinos. 
 * `FieldDataCollection_TypicalHardwareSetups_TimeSyncTriggerBox`_: CAD models for trigger box.
 
-Camera subsystems redesign: 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sensors - Cameras: 
+
 * `Hardware_MappingVanHardware_Camera`_: Remounting the cameras to improve regidity, water intrusion, and hardware faults
 * `Camera Calibration`_ : Methods used to calibrate the camera system
 
-LiDAR subsystems redesign: 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sensors - LIDAR: 
+
 * `Hardware_MappingVanHardware_LiDAR`_: Documents of LiDAR specs
 * `FieldDataCollection_TypicalHardwareSetups_LIDARs_CeptonX90Install`_: Procedure of installing CeptonX90 LiDAR
 * `FieldDataCollection_TypicalHardwareSetups_LIDARs_VelodyneVLP16Install`_: Procedure of installing VelodyneVLP16 LiDAR 
 
-Redesign of other hardware subsystems: 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sensors - Wheel Encoders:
+
 * `Hardware_MappingVanHardware_Encoder`_: Setup of encoders
-* `Hardware_MappingVanHardware_Radar`_: Setup of Radar
-* `Hardware_MappingVanHardware_PowerSystem`_: Setup of power system   
+
+Sensors - Radar:
+
+* `Hardware_MappingVanHardware_Radar`_: Setup of Radar 
+
+Sensors - GPS:
+
 * `Hardware_MappingVanHardware_GPS`_: Setup of GPS
+
+Sensors - IMU:
+
 * `Hardware_MappingVanHardware_IMU`_: Setup of IMU
+
+Sensors - Steering System:
+
 * `Hardware_MappingVanHardware_SteeringSystem`_: Setup of steering system    
 
-Data parsing:
+Calibration:
+~~~~~~~~~~~~~~~~~~~~
+To be added 
+
+Data Collection:
+~~~~~~~~~~~~~~~~~~
+To be added 
+
+Data Processing: 
+~~~~~~~~~~~~~~~~~
+To be added 
+
+Maps: 
+~~~~~~~~
+To be added 
+
+Data Parsing:
 ~~~~~~~~~~~~~~~~~~~~
 
 * `FieldDataCollection_DataCollectionProcedures_ParseRawDataToDatabase`_: Parse raw data (.bag) to raw data database
 * `FieldDataCollection_DataCollectionProcedures_DataTransferWithDMS`_:Transfer data to PennDOT DMS
 * `FieldDataCollection_DataCollectionProcedures_AutomatingDataTransferToDMSUsingCommandLine`_: Transfer data to PennDOT DMS using command line tools   
 * `FieldDataCollection_DataCollectionProcedures_StitchingImagesToVideo`_:Stitching parsed images into a video
-
-
-Prepare tools for traffic simulation including:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA`_: Launch page to get started with CARLA  
-* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO`_:Launch page to get started with SUMO 
-* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA-SUMOCosimulation`_: Launch page to get started with CARLA-SUMO cosimulation  
 
 
 Year 2

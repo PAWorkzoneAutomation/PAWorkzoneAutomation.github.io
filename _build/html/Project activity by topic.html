@@ -47,16 +47,18 @@
 <li class="toctree-l1"><a class="reference internal" href="Introduction%20to%20the%20Project.html">Introduction to the Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Project%20activity%20by%20year.html">Project activity by year</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Project activity by topic</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#simulation">Simulation:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#traffic-and-vehicle-simulations">Traffic and vehicle simulations:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#mapping">Mapping:</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#time-synchonization">Time Synchonization:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#camera-subsystems-redesign">Camera subsystems redesign:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#lidar-subsystems-redesign">LiDAR subsystems redesign:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#redesign-of-other-hardware-subsystems">Redesign of other hardware subsystems:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-parsing">Data parsing:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#about-the-mapping-van">About the Mapping Van:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware">Hardware:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calibration">Calibration:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-collection">Data Collection:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-processing">Data Processing:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#maps">Maps:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-parsing">Data Parsing:</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#workzone-instrumentation">Workzone instrumentation:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#workzone-instrumentation">Workzone Instrumentation:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-management-system-dms">Data Management System (DMS):</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#automonous-vehicle-testing">Automonous Vehicle testing:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#coatings">Coatings:</a></li>
@@ -92,8 +94,8 @@
              
   <section id="project-activity-by-topic">
 <h1>Project activity by topic<a class="headerlink" href="#project-activity-by-topic" title="Permalink to this heading"></a></h1>
-<section id="simulation">
-<h2>Simulation:<a class="headerlink" href="#simulation" title="Permalink to this heading"></a></h2>
+<section id="traffic-and-vehicle-simulations">
+<h2>Traffic and vehicle simulations:<a class="headerlink" href="#traffic-and-vehicle-simulations" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA">TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA</a>: Launch page to get started with CARLA</p></li>
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO">TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO</a>:Launch page to get started with SUMO</p></li>
@@ -102,42 +104,72 @@
 </section>
 <section id="mapping">
 <h2>Mapping:<a class="headerlink" href="#mapping" title="Permalink to this heading"></a></h2>
-<section id="time-synchonization">
-<h3>Time Synchonization:<a class="headerlink" href="#time-synchonization" title="Permalink to this heading"></a></h3>
+<section id="about-the-mapping-van">
+<h3>About the Mapping Van:<a class="headerlink" href="#about-the-mapping-van" title="Permalink to this heading"></a></h3>
+<p>To be added</p>
+</section>
+<section id="hardware">
+<h3>Hardware:<a class="headerlink" href="#hardware" title="Permalink to this heading"></a></h3>
+<p>Power System:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_PowerSystem">Hardware_MappingVanHardware_PowerSystem</a>: Setup of power system</p></li>
+</ul>
+<p>Time Synchonization:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_TypicalHardwareSetups_TriggerCameraUsingExternalSignal">FieldDataCollection_TypicalHardwareSetups_TriggerCameraUsingExternalSignal</a>:Methods to externally trigger FLIR cameras to external trigger signals.</p></li>
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_TypicalHardwareSetups_TimeSync_ArduinoUsingGPSPPS">FieldDataCollection_TypicalHardwareSetups_TimeSync_ArduinoUsingGPSPPS</a>: Producing tight time-trigger pulses (less than 20 microseconds jitter) via Arduinos.</p></li>
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_TypicalHardwareSetups_TimeSyncTriggerBox">FieldDataCollection_TypicalHardwareSetups_TimeSyncTriggerBox</a>: CAD models for trigger box.</p></li>
 </ul>
-</section>
-<section id="camera-subsystems-redesign">
-<h3>Camera subsystems redesign:<a class="headerlink" href="#camera-subsystems-redesign" title="Permalink to this heading"></a></h3>
+<p>Sensors - Cameras:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_TypicalHardwareSetups_TriggerCameraUsingExternalSignal">Hardware_MappingVanHardware_Camera</a>: Remounting the cameras to improve regidity, water intrusion, and hardware faults</p></li>
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/ivsg_master/tree/master/CameraCalibration_wiki">Camera Calibration</a> : Methods used to calibrate the camera system</p></li>
 </ul>
-</section>
-<section id="lidar-subsystems-redesign">
-<h3>LiDAR subsystems redesign:<a class="headerlink" href="#lidar-subsystems-redesign" title="Permalink to this heading"></a></h3>
+<p>Sensors - LIDAR:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_LiDAR">Hardware_MappingVanHardware_LiDAR</a>: Documents of LiDAR specs</p></li>
-<li><p><cite>FieldDataCollection_TypicalHardwareSetups_LIDARs_CeptonX90Install_</cite>: Procedure of installing VelodyneVLP16 LiDAR</p></li>
+<li><p><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_TypicalHardwareSetups_LIDARs_VelodyneVLP16Install">FieldDataCollection_TypicalHardwareSetups_LIDARs_CeptonX90Install</a>: Procedure of installing CeptonX90 LiDAR</p></li>
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_TypicalHardwareSetups_LIDARs_VelodyneVLP16Install">FieldDataCollection_TypicalHardwareSetups_LIDARs_VelodyneVLP16Install</a>: Procedure of installing VelodyneVLP16 LiDAR</p></li>
 </ul>
-</section>
-<section id="redesign-of-other-hardware-subsystems">
-<h3>Redesign of other hardware subsystems:<a class="headerlink" href="#redesign-of-other-hardware-subsystems" title="Permalink to this heading"></a></h3>
+<p>Sensors - Wheel Encoders:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_Encoder">Hardware_MappingVanHardware_Encoder</a>: Setup of encoders</p></li>
+</ul>
+<p>Sensors - Radar:</p>
+<ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_Radar">Hardware_MappingVanHardware_Radar</a>: Setup of Radar</p></li>
-<li><p><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_PowerSystem">Hardware_MappingVanHardware_PowerSystem</a>: Setup of power system</p></li>
+</ul>
+<p>Sensors - GPS:</p>
+<ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_GPS">Hardware_MappingVanHardware_GPS</a>: Setup of GPS</p></li>
+</ul>
+<p>Sensors - IMU:</p>
+<ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_IMU">Hardware_MappingVanHardware_IMU</a>: Setup of IMU</p></li>
+</ul>
+<p>Sensors - Steering System:</p>
+<ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_SteeringSystem">Hardware_MappingVanHardware_SteeringSystem</a>: Setup of steering system</p></li>
 </ul>
 </section>
+<section id="calibration">
+<h3>Calibration:<a class="headerlink" href="#calibration" title="Permalink to this heading"></a></h3>
+<p>To be added</p>
+</section>
+<section id="data-collection">
+<h3>Data Collection:<a class="headerlink" href="#data-collection" title="Permalink to this heading"></a></h3>
+<p>To be added</p>
+</section>
+<section id="data-processing">
+<h3>Data Processing:<a class="headerlink" href="#data-processing" title="Permalink to this heading"></a></h3>
+<p>To be added</p>
+</section>
+<section id="maps">
+<h3>Maps:<a class="headerlink" href="#maps" title="Permalink to this heading"></a></h3>
+<p>To be added</p>
+</section>
 <section id="data-parsing">
-<h3>Data parsing:<a class="headerlink" href="#data-parsing" title="Permalink to this heading"></a></h3>
+<h3>Data Parsing:<a class="headerlink" href="#data-parsing" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_DataCollectionProcedures_ParseRawDataToDatabase">FieldDataCollection_DataCollectionProcedures_ParseRawDataToDatabase</a>: Parse raw data (.bag) to raw data database</p></li>
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_DataCollectionProcedures_DataTransferWithDMS">FieldDataCollection_DataCollectionProcedures_DataTransferWithDMS</a>:Transfer data to PennDOT DMS</p></li>
@@ -147,7 +179,7 @@
 </section>
 </section>
 <section id="workzone-instrumentation">
-<h2>Workzone instrumentation:<a class="headerlink" href="#workzone-instrumentation" title="Permalink to this heading"></a></h2>
+<h2>Workzone Instrumentation:<a class="headerlink" href="#workzone-instrumentation" title="Permalink to this heading"></a></h2>
 <p>To be added:</p>
 <ul class="simple">
 <li><p>About the workzone instrumentation</p></li>
