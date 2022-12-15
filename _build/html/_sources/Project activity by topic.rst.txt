@@ -50,13 +50,45 @@ Data parsing:
 * `FieldDataCollection_DataCollectionProcedures_StitchingImagesToVideo`_:Stitching parsed images into a video
 
 Workzone instrumentation:
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 To be added:
 
+* About the workzone instrumentation
 * V2X
 * Smart traffic cone
 * Vests
 * Over head cameras
+
+Data Management System (DMS):
+------------------------------
+To be added:
+
+* About the DMS 
+* Accessing the DMS from the public
+* Accessing the DMS from the team 
+* Structure of DMS 
+* Labels used in DMS 
+* Process for data upload/download 
+
+
+
+Automonous Vehicle testing:
+------------------------------
+To be added:
+
+* About the AV 
+* Data collected from the AV 
+* Software
+
+
+Coatings:
+----------------------------
+To be added: 
+
+* About coatings etc 
+
+
+
 
 
 

@@ -11,7 +11,7 @@ Year 1
 
 Time Synchonization: 
 ~~~~~~~~~~~~~~~~~~~~~
-* `FieldDataCollection_TypicalHardwareSetups_TriggerCameraUsingExternalSignal`_:Methods to externally trigger FLIR cameras to external trigger signals. 
+* `FieldDataCollection_TypicalHardwareSetups_TriggerCameraUsingExternalSignal`_: Methods to externally trigger FLIR cameras to external trigger signals. 
 * `FieldDataCollection_TypicalHardwareSetups_TimeSync_ArduinoUsingGPSPPS`_: Producing tight time-trigger pulses (less than 20 microseconds jitter) via Arduinos. 
 * `FieldDataCollection_TypicalHardwareSetups_TimeSyncTriggerBox`_: CAD models for trigger box.
 
