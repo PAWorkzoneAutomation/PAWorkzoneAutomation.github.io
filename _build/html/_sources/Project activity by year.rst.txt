@@ -10,14 +10,14 @@ Year 1
 ---------------------------------------------------------
 
 Traffic and vehicle simulations
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA`_: Launch page to get started with CARLA (IVSG - PSU internal)
 * `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO`_: Launch page to get started with SUMO (IVSG - PSU internal)
 * `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA-SUMOCosimulation`_: Launch page to get started with CARLA-SUMO cosimulation (IVSG - PSU internal)
 
 
 Mapping
----------------
+~~~~~~~~~~
 
 About the Mapping Van: 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
