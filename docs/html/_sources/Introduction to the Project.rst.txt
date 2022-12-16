@@ -59,14 +59,14 @@ Team members
 Groups with Related Interests
 --------------------------------------
 
-* `Welcome to OpenCDA’s documentation!`_ : A SIMULATION tool integrated with a prototype cooperative driving automation (CDA; see SAE J3216) pipeline as well as regular automated driving components (e.g., perception, localization, planning, control).
+* `The OpenCDA project (UCLA mobility lab)`_ : A SIMULATION tool integrated with a prototype cooperative driving automation (CDA; see SAE J3216) pipeline as well as regular automated driving components (e.g., perception, localization, planning, control).
 
-Publications:
+Publications
 -------------------
 To be added 
 
 
-Events:
+Events
 -------------
 To be added 
 
@@ -81,5 +81,5 @@ This project is funded by USDOT via Pennsylvania Department of Transportation un
 
 
 .. _here: https://www.penndot.gov/ProjectAndPrograms/ResearchandTesting/Autonomous%20_Vehicles/Pages/ADS-Demonstration.aspx
-.. _Welcome to OpenCDA’s documentation!: https://opencda-documentation.readthedocs.io/en/latest/index.html
+.. _The OpenCDA project (UCLA mobility lab): https://opencda-documentation.readthedocs.io/en/latest/index.html
 

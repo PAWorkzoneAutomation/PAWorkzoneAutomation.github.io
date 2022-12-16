@@ -6,14 +6,14 @@
 Project activity by topic
 ================================
 
-Traffic and vehicle simulations: 
+Traffic and vehicle simulations
 -----------------------------------
-* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA`_: Launch page to get started with CARLA  
-* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO`_:Launch page to get started with SUMO 
-* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA-SUMOCosimulation`_: Launch page to get started with CARLA-SUMO cosimulation  
+* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA`_: Launch page to get started with CARLA (IVSG - PSU internal)
+* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO`_: Launch page to get started with SUMO (IVSG - PSU internal)
+* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA-SUMOCosimulation`_: Launch page to get started with CARLA-SUMO cosimulation (IVSG - PSU internal)
 
 
-Mapping:
+Mapping
 ---------------
 
 About the Mapping Van: 
@@ -25,48 +25,49 @@ Hardware:
 
 Power System: 
 
-* `Hardware_MappingVanHardware_PowerSystem`_: Setup of power system  
+* `Hardware_MappingVanHardware_PowerSystem`_: Setup of power system (IVSG - PSU internal)
 
 Time Synchonization: 
 
-* `FieldDataCollection_TypicalHardwareSetups_TriggerCameraUsingExternalSignal`_:Methods to externally trigger FLIR cameras to external trigger signals. 
-* `FieldDataCollection_TypicalHardwareSetups_TimeSync_ArduinoUsingGPSPPS`_: Producing tight time-trigger pulses (less than 20 microseconds jitter) via Arduinos. 
-* `FieldDataCollection_TypicalHardwareSetups_TimeSyncTriggerBox`_: CAD models for trigger box.
+* `FieldDataCollection_TypicalHardwareSetups_TriggerCameraUsingExternalSignal`_:Methods to externally trigger FLIR cameras to external trigger signals. (IVSG - PSU internal)
+* `FieldDataCollection_TypicalHardwareSetups_TimeSync_ArduinoUsingGPSPPS`_: Producing tight time-trigger pulses (less than 20 microseconds jitter) via Arduinos. (IVSG - PSU internal)
+* `FieldDataCollection_TypicalHardwareSetups_TimeSyncTriggerBox`_: CAD models for trigger box. (IVSG - PSU internal)
 
 Sensors - Cameras: 
 
-* `Hardware_MappingVanHardware_Camera`_: Remounting the cameras to improve regidity, water intrusion, and hardware faults
-* `Camera Calibration`_ : Methods used to calibrate the camera system
+* `Hardware_MappingVanHardware_Camera`_: Remounting the cameras to improve regidity, water intrusion, and hardware faults. (IVSG - PSU internal)
+* `Camera Calibration`_ : Methods used to calibrate the camera system. (IVSG - PSU internal)
 
 Sensors - LIDAR: 
 
-* `Hardware_MappingVanHardware_LiDAR`_: Documents of LiDAR specs
-* `FieldDataCollection_TypicalHardwareSetups_LIDARs_CeptonX90Install`_: Procedure of installing CeptonX90 LiDAR
-* `FieldDataCollection_TypicalHardwareSetups_LIDARs_VelodyneVLP16Install`_: Procedure of installing VelodyneVLP16 LiDAR 
+* `Hardware_MappingVanHardware_LiDAR`_: Documents of LiDAR specs. (IVSG - PSU internal)
+* `FieldDataCollection_TypicalHardwareSetups_LIDARs_CeptonX90Install`_: Procedure of installing CeptonX90 LiDAR. (IVSG - PSU internal)
+* `FieldDataCollection_TypicalHardwareSetups_LIDARs_VelodyneVLP16Install`_: Procedure of installing VelodyneVLP16 LiDAR. (IVSG - PSU internal)
 
 Sensors - Wheel Encoders:
 
-* `Hardware_MappingVanHardware_Encoder`_: Setup of encoders
+* `Hardware_MappingVanHardware_Encoder`_: Setup of encoders. (IVSG - PSU internal)
 
 Sensors - Radar:
 
-* `Hardware_MappingVanHardware_Radar`_: Setup of Radar 
+* `Hardware_MappingVanHardware_Radar`_: Setup of Radar. (IVSG - PSU internal) 
 
 Sensors - GPS:
 
-* `Hardware_MappingVanHardware_GPS`_: Setup of GPS
+* `Hardware_MappingVanHardware_GPS`_: Setup of GPS. (IVSG - PSU internal)
 
 Sensors - IMU:
 
-* `Hardware_MappingVanHardware_IMU`_: Setup of IMU
+* `Hardware_MappingVanHardware_IMU`_: Setup of IMU. (IVSG - PSU internal)
 
 Sensors - Steering System:
 
-* `Hardware_MappingVanHardware_SteeringSystem`_: Setup of steering system    
+* `Hardware_MappingVanHardware_SteeringSystem`_: Setup of steering system. (IVSG - PSU internal)    
 
 Calibration:
 ~~~~~~~~~~~~~~~~~~~~
-To be added 
+To be added:
+
 
 Data Collection:
 ~~~~~~~~~~~~~~~~~~
@@ -83,22 +84,13 @@ To be added
 Data Parsing:
 ~~~~~~~~~~~~~~~~~~~~
 
-* `FieldDataCollection_DataCollectionProcedures_ParseRawDataToDatabase`_: Parse raw data (.bag) to raw data database
-* `FieldDataCollection_DataCollectionProcedures_DataTransferWithDMS`_:Transfer data to PennDOT DMS
-* `FieldDataCollection_DataCollectionProcedures_AutomatingDataTransferToDMSUsingCommandLine`_: Transfer data to PennDOT DMS using command line tools   
-* `FieldDataCollection_DataCollectionProcedures_StitchingImagesToVideo`_:Stitching parsed images into a video
+* `FieldDataCollection_DataCollectionProcedures_ParseRawDataToDatabase`_: Parse raw data (.bag) to raw data database. (IVSG - PSU internal)
+* `FieldDataCollection_DataCollectionProcedures_DataTransferWithDMS`_:Transfer data to PennDOT DMS. (IVSG - PSU internal)
+* `FieldDataCollection_DataCollectionProcedures_AutomatingDataTransferToDMSUsingCommandLine`_: Transfer data to PennDOT DMS using command line tools. (IVSG - PSU internal)   
+* `FieldDataCollection_DataCollectionProcedures_StitchingImagesToVideo`_:Stitching parsed images into a video. (IVSG - PSU internal)
 
-Workzone Instrumentation:
-----------------------------
-To be added:
 
-* About the workzone instrumentation
-* V2X
-* Smart traffic cone
-* Vests
-* Over head cameras
-
-Data Management System (DMS):
+Data Management System (DMS)
 ------------------------------
 To be added:
 
@@ -111,25 +103,49 @@ To be added:
 
 
 
-Automonous Vehicle testing:
+Automonous Vehicle testing
 ------------------------------
 To be added:
 
 * About the AV 
-* Data collected from the AV 
-* Software
+* the AV equipment
+* the AV setup 
+* the AV testing 
+* the AV sample data
+* the AV results 
 
 
-Coatings:
+Coatings
 ----------------------------
 To be added: 
 
-* About coatings etc 
+* About coatings 
+* Coating details used in the project 
+* Calibration of the coatings 
+* Coating tests 
+* Coating results  
 
 
+CV2X 
+----------------------------
+To be added: 
 
+* About CV2X 
+* CV2X equipment
+* CV2X setup 
+* CV2X testing 
+* CV2X sample data
+* CV2X results 
 
+Work Zone Instrumentation 
+------------------------------
 
+* About Work Zone Instrumentation 
+* Work Zone Instrumentation equipment
+* Work Zone Instrumentation setup 
+* Work Zone Instrumentation testing 
+* Work Zone Instrumentation sample data
+* Work Zone Instrumentation results 
 
 
 
