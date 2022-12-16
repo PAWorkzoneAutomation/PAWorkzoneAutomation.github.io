@@ -8,7 +8,7 @@ Introduction to the Project
 
 .. image:: Images/penndot.png 
 
-Welcome to the Penn State wiki page for details on the Automated Driving System Workzone project. This page presents details primarily focused on the Penn State team activity. Additional details can be found at the PennDOT's public ADS page, which can be found `here`_.
+Welcome to the ADS project wiki page for details on the Automated Driving System Workzone project. This page presents details primarily focused on the Penn State team activity. Additional details can be found at the PennDOT's public ADS page, which can be found `here`_.
 
 The Motivation for the Safe Integration of Automated Vehicles into Work Zones
 -------------------------------------------------------------------------------
