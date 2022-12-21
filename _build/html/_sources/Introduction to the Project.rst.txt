@@ -45,9 +45,19 @@ Team members
 
 +----------------------------------------+----------------------------------------+------------------------------------------+
 | .. image:: Images/vijay_withtitle.jpg  | .. image:: Images/raj_withtitle.png    | .. image:: Images/sean_withtitle.jpg     |
-+========================================+========================================+==========================================+
++----------------------------------------+----------------------------------------+------------------------------------------+
 | .. image:: Images/vikash_withtitle.jpg | .. image:: Images/eric_withtitle.jpg   | .. image:: Images/ilgin_withtitle.jpg    |
 +----------------------------------------+----------------------------------------+------------------------------------------+
+| .. image:: Images/dave_withtitle.jpg   |                                        |                                          |
++----------------------------------------+----------------------------------------+------------------------------------------+
+
+
+
+
+
+
+
+
 
 * Students
 
@@ -60,6 +70,7 @@ Groups with Related Interests
 --------------------------------------
 
 * `The OpenCDA project (UCLA mobility lab)`_ : A SIMULATION tool integrated with a prototype cooperative driving automation (CDA; see SAE J3216) pipeline as well as regular automated driving components (e.g., perception, localization, planning, control).
+* `Michael Baker International`_ : A leading provider of engineering and consulting services.
 
 Publications
 -------------------
@@ -82,4 +93,4 @@ This project is funded by USDOT via Pennsylvania Department of Transportation un
 
 .. _here: https://www.penndot.gov/ProjectAndPrograms/ResearchandTesting/Autonomous%20_Vehicles/Pages/ADS-Demonstration.aspx
 .. _The OpenCDA project (UCLA mobility lab): https://opencda-documentation.readthedocs.io/en/latest/index.html
-
+.. _Michael Baker International: https://mbakerintl.com/
