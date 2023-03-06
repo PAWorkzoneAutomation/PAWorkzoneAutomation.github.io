@@ -26,7 +26,12 @@ Mapping
 
 About the Mapping Van: 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-To be added
+* `Mapping_MappingVan_About`_: General information about the Penn State Mapping Van
+
+Choice of Coordinate Systems for Wide Areas: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* `Mapping_CoordinateSystems_WideAreas`_: Discussion of coordinate systems and the errors each can introduce when mapping large areas.
+
 
 Hardware: 
 ~~~~~~~~~~~~~~~~~~~~~
@@ -83,7 +88,11 @@ To be added
 
 Data Processing: 
 ~~~~~~~~~~~~~~~~~
-To be added 
+
+Processing GPS Data: 
+
+* `DataProcessing_GPS_GPSConversionMethods`_: A repo sharing the algorithms used for GPS conversions, e.g. LLA to ENU. 
+
 
 Maps: 
 ~~~~~~~~
@@ -131,6 +140,9 @@ To be added:
 .. _TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA-SUMOCosimulation: https://github.com/ivsg-psu/TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA-SUMOCosimulation
 .. _TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO: https://github.com/ivsg-psu/TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO
 .. _TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA: https://github.com/ivsg-psu/TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA
+.. _Mapping_MappingVan_About: https://connectedvehicles.psu.edu/
+.. _Mapping_CoordinateSystems_WideAreas: https://github.com/ivsg-psu/TrafficSimulators_WideAreaCoordinateSystems
+.. _DataProcessing_GPS_GPSConversionMethods: https://github.com/ivsg-psu/FieldDataCollection_GPSRelatedCodes_GPSClass
 .. _FieldDataCollection_DataCollectionProcedures_StitchingImagesToVideo: https://github.com/ivsg-psu/FieldDataCollection_DataCollectionProcedures_StitchingImagesToVideo
 .. _FieldDataCollection_DataCollectionProcedures_AutomatingDataTransferToDMSUsingCommandLine: https://github.com/ivsg-psu/FieldDataCollection_DataCollectionProcedures_AutomatingDataTransferToDMSUsingCommandLine
 .. _FieldDataCollection_DataCollectionProcedures_DataTransferWithDMS: https://github.com/ivsg-psu/FieldDataCollection_DataCollectionProcedures_DataTransferWithDMS
