@@ -9,7 +9,7 @@ Project activity by member
 Penn State Team
 ------------------------
 Traffic and vehicle simulations
------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: Images/ADS_overview_diagram.png
    
@@ -19,14 +19,19 @@ Traffic and vehicle simulations
 
 
 Mapping
----------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 About the Mapping Van: 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-To be added
+::::::::::::::::::::::::
+* `Mapping_MappingVan_About`_: General information about the Penn State Mapping Van
+
+Choice of Coordinate Systems for Wide Areas: 
+::::::::::::::::::::::::::::::::::::::::::::::::
+* `Mapping_CoordinateSystems_WideAreas`_: Discussion of coordinate systems and the errors each can introduce when mapping large areas.
 
 Hardware: 
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Power System: 
 
@@ -70,24 +75,24 @@ Sensors - Steering System:
 * `Hardware_MappingVanHardware_SteeringSystem`_: Setup of steering system. (IVSG - PSU internal)    
 
 Calibration:
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To be added:
 
 
 Data Collection:
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To be added 
 
 Data Processing: 
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To be added 
 
 Maps and scenarios: 
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To be added 
 
 Data Parsing:
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * `FieldDataCollection_DataCollectionProcedures_ParseRawDataToDatabase`_: Parse raw data (.bag) to raw data database. (IVSG - PSU internal)
 * `FieldDataCollection_DataCollectionProcedures_DataTransferWithDMS`_:Transfer data to PennDOT DMS. (IVSG - PSU internal)
@@ -151,3 +156,5 @@ To be added
 .. _Hardware_MappingVanHardware_GPS: https://github.com/ivsg-psu/Hardware_MappingVanHardware_GPS
 .. _Hardware_MappingVanHardware_IMU: https://github.com/ivsg-psu/Hardware_MappingVanHardware_IMU
 .. _Hardware_MappingVanHardware_SteeringSystem: https://github.com/ivsg-psu/Hardware_MappingVanHardware_SteeringSystem
+.. _Mapping_MappingVan_About: https://connectedvehicles.psu.edu/
+.. _Mapping_CoordinateSystems_WideAreas: https://github.com/ivsg-psu/TrafficSimulators_WideAreaCoordinateSystems
