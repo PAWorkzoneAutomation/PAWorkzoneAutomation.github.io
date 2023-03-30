@@ -25,11 +25,11 @@ Mapping
 ~~~~~~~~~~
 
 About the Mapping Van: 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+::::::::::::::::::::::::
 * `Mapping_MappingVan_About`_: General information about the Penn State Mapping Van
 
 Choice of Coordinate Systems for Wide Areas: 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+::::::::::::::::::::::::::::::::::::::::::::::::
 * `Mapping_CoordinateSystems_WideAreas`_: Discussion of coordinate systems and the errors each can introduce when mapping large areas.
 
 
@@ -84,7 +84,9 @@ To be added:
 
 Data Collection:
 ~~~~~~~~~~~~~~~~~~
-To be added 
+
+To be added.
+
 
 Data Processing: 
 ~~~~~~~~~~~~~~~~~
@@ -94,8 +96,8 @@ Processing GPS Data:
 * `DataProcessing_GPS_GPSConversionMethods`_: A repo sharing the algorithms used for GPS conversions, e.g. LLA to ENU. 
 
 
-Maps: 
-~~~~~~~~
+Maps and scenarios: 
+~~~~~~~~~~~~~~~~~~~~~~
 To be added 
 
 Data Parsing:

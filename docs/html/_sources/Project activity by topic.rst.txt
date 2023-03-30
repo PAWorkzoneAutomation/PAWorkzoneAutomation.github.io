@@ -17,14 +17,20 @@ Traffic and vehicle simulations
 
 
 Mapping
----------------
+--------------------------
 
 About the Mapping Van: 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+::::::::::::::::::::::::::
+
+Choice of Coordinate Systems for Wide Areas: 
+::::::::::::::::::::::::::::::::::::::::::::::::
+* `Mapping_CoordinateSystems_WideAreas`_: Discussion of coordinate systems and the errors each can introduce when mapping large areas.
+
+
 To be added
 
 Hardware: 
-~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 Power System: 
 
@@ -68,24 +74,24 @@ Sensors - Steering System:
 * `Hardware_MappingVanHardware_SteeringSystem`_: Setup of steering system. (IVSG - PSU internal)    
 
 Calibration:
-~~~~~~~~~~~~~~~~~~~~
+--------------------------
 To be added:
 
 
 Data Collection:
-~~~~~~~~~~~~~~~~~~
+--------------------------
 To be added 
 
 Data Processing: 
-~~~~~~~~~~~~~~~~~
+--------------------------
 To be added 
 
-Maps: 
-~~~~~~~~
+Maps and scenarios: 
+--------------------------
 To be added 
 
 Data Parsing:
-~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 * `FieldDataCollection_DataCollectionProcedures_ParseRawDataToDatabase`_: Parse raw data (.bag) to raw data database. (IVSG - PSU internal)
 * `FieldDataCollection_DataCollectionProcedures_DataTransferWithDMS`_:Transfer data to PennDOT DMS. (IVSG - PSU internal)
@@ -95,13 +101,32 @@ Data Parsing:
 
 Data Management System (DMS)
 ------------------------------
+
+.. image:: Images/DataStructureInDMS.png
+
+The data tags definition is below:
+
+Stage - either "Simulation","TestTrack","OnRoad"
+
+ScenarioNumber - the ID number for the Scenario
+
+ScenarioShortName - the "short" name for the Scenario
+
+Treatments - These are 3 subfields, for HD maps, Comms, Coatings - each for "with" and "without"
+
+DataSource - either "AV" or "MappingVan" or "Roadside"
+
+Per-treatment data - "MergedMap" or "ProcessedMetrics" or "CARLAScenario" or "Codes"
+
+Aggregated mapping data - "Precalibration", "Prerun", "Postrun", "Postcalibration"
+
+Individual run data - the run number, e.g. pass number 1 of the AV
+
 To be added:
 
 * About the DMS 
 * Accessing the DMS from the public
 * Accessing the DMS from the team 
-* Structure of DMS 
-* Labels used in DMS 
 * Process for data upload/download 
 
 
@@ -175,3 +200,4 @@ Work Zone Instrumentation
 .. _Hardware_MappingVanHardware_GPS: https://github.com/ivsg-psu/Hardware_MappingVanHardware_GPS
 .. _Hardware_MappingVanHardware_IMU: https://github.com/ivsg-psu/Hardware_MappingVanHardware_IMU
 .. _Hardware_MappingVanHardware_SteeringSystem: https://github.com/ivsg-psu/Hardware_MappingVanHardware_SteeringSystem
+.. _Mapping_CoordinateSystems_WideAreas: https://github.com/ivsg-psu/TrafficSimulators_WideAreaCoordinateSystems

@@ -50,14 +50,15 @@
 <li class="toctree-l2"><a class="reference internal" href="#traffic-and-vehicle-simulations">Traffic and vehicle simulations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#mapping">Mapping</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#about-the-mapping-van">About the Mapping Van:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#hardware">Hardware:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#calibration">Calibration:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-collection">Data Collection:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-processing">Data Processing:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#maps">Maps:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-parsing">Data Parsing:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#choice-of-coordinate-systems-for-wide-areas">Choice of Coordinate Systems for Wide Areas:</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#hardware">Hardware:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#calibration">Calibration:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-collection">Data Collection:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-processing">Data Processing:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#maps-and-scenarios">Maps and scenarios:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-parsing">Data Parsing:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-management-system-dms">Data Management System (DMS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#automonous-vehicle-testing">Automonous Vehicle testing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#coatings">Coatings</a></li>
@@ -108,10 +109,17 @@
 <h2>Mapping<a class="headerlink" href="#mapping" title="Permalink to this heading"></a></h2>
 <section id="about-the-mapping-van">
 <h3>About the Mapping Van:<a class="headerlink" href="#about-the-mapping-van" title="Permalink to this heading"></a></h3>
+</section>
+<section id="choice-of-coordinate-systems-for-wide-areas">
+<h3>Choice of Coordinate Systems for Wide Areas:<a class="headerlink" href="#choice-of-coordinate-systems-for-wide-areas" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ivsg-psu/TrafficSimulators_WideAreaCoordinateSystems">Mapping_CoordinateSystems_WideAreas</a>: Discussion of coordinate systems and the errors each can introduce when mapping large areas.</p></li>
+</ul>
 <p>To be added</p>
 </section>
+</section>
 <section id="hardware">
-<h3>Hardware:<a class="headerlink" href="#hardware" title="Permalink to this heading"></a></h3>
+<h2>Hardware:<a class="headerlink" href="#hardware" title="Permalink to this heading"></a></h2>
 <p>Power System:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/Hardware_MappingVanHardware_PowerSystem">Hardware_MappingVanHardware_PowerSystem</a>: Setup of power system (IVSG - PSU internal)</p></li>
@@ -155,23 +163,23 @@
 </ul>
 </section>
 <section id="calibration">
-<h3>Calibration:<a class="headerlink" href="#calibration" title="Permalink to this heading"></a></h3>
+<h2>Calibration:<a class="headerlink" href="#calibration" title="Permalink to this heading"></a></h2>
 <p>To be added:</p>
 </section>
 <section id="data-collection">
-<h3>Data Collection:<a class="headerlink" href="#data-collection" title="Permalink to this heading"></a></h3>
+<h2>Data Collection:<a class="headerlink" href="#data-collection" title="Permalink to this heading"></a></h2>
 <p>To be added</p>
 </section>
 <section id="data-processing">
-<h3>Data Processing:<a class="headerlink" href="#data-processing" title="Permalink to this heading"></a></h3>
+<h2>Data Processing:<a class="headerlink" href="#data-processing" title="Permalink to this heading"></a></h2>
 <p>To be added</p>
 </section>
-<section id="maps">
-<h3>Maps:<a class="headerlink" href="#maps" title="Permalink to this heading"></a></h3>
+<section id="maps-and-scenarios">
+<h2>Maps and scenarios:<a class="headerlink" href="#maps-and-scenarios" title="Permalink to this heading"></a></h2>
 <p>To be added</p>
 </section>
 <section id="data-parsing">
-<h3>Data Parsing:<a class="headerlink" href="#data-parsing" title="Permalink to this heading"></a></h3>
+<h2>Data Parsing:<a class="headerlink" href="#data-parsing" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_DataCollectionProcedures_ParseRawDataToDatabase">FieldDataCollection_DataCollectionProcedures_ParseRawDataToDatabase</a>: Parse raw data (.bag) to raw data database. (IVSG - PSU internal)</p></li>
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_DataCollectionProcedures_DataTransferWithDMS">FieldDataCollection_DataCollectionProcedures_DataTransferWithDMS</a>:Transfer data to PennDOT DMS. (IVSG - PSU internal)</p></li>
@@ -179,16 +187,23 @@
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_DataCollectionProcedures_StitchingImagesToVideo">FieldDataCollection_DataCollectionProcedures_StitchingImagesToVideo</a>:Stitching parsed images into a video. (IVSG - PSU internal)</p></li>
 </ul>
 </section>
-</section>
 <section id="data-management-system-dms">
 <h2>Data Management System (DMS)<a class="headerlink" href="#data-management-system-dms" title="Permalink to this heading"></a></h2>
+<img alt="_images/DataStructureInDMS.png" src="_images/DataStructureInDMS.png" />
+<p>The data tags definition is below:</p>
+<p>Stage - either “Simulation”,”TestTrack”,”OnRoad”</p>
+<p>ScenarioNumber - the ID number for the Scenario</p>
+<p>ScenarioShortName - the “short” name for the Scenario</p>
+<p>Treatments - These are 3 subfields, for HD maps, Comms, Coatings - each for “with” and “without”</p>
+<p>DataSource - either “AV” or “MappingVan” or “Roadside”</p>
+<p>Per-treatment data - “MergedMap” or “ProcessedMetrics” or “CARLAScenario” or “Codes”</p>
+<p>Aggregated mapping data - “Precalibration”, “Prerun”, “Postrun”, “Postcalibration”</p>
+<p>Individual run data - the run number, e.g. pass number 1 of the AV</p>
 <p>To be added:</p>
 <ul class="simple">
 <li><p>About the DMS</p></li>
 <li><p>Accessing the DMS from the public</p></li>
 <li><p>Accessing the DMS from the team</p></li>
-<li><p>Structure of DMS</p></li>
-<li><p>Labels used in DMS</p></li>
 <li><p>Process for data upload/download</p></li>
 </ul>
 </section>
