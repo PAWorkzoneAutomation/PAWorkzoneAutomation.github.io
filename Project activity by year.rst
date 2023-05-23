@@ -98,7 +98,8 @@ Processing GPS Data:
 
 Maps and scenarios: 
 ~~~~~~~~~~~~~~~~~~~~~~
-To be added 
+
+* `FieldDataCollection_VisualizingFieldData_PlotWorkZone`_: A repo displaying the scenarios and their descriptions. (IVSG - PSU internal)
 
 Data Parsing:
 ~~~~~~~~~~~~~~~~~~~~
@@ -165,3 +166,4 @@ To be added:
 .. _Hardware_MappingVanHardware_SteeringSystem: https://github.com/ivsg-psu/Hardware_MappingVanHardware_SteeringSystem
 
 .. _FieldDataCollection_TypicalHardwareSetups_LIDARs_CeptonX90Install: https://github.com/ivsg-psu/FieldDataCollection_TypicalHardwareSetups_LIDARs_CeptonX90Install
+.. _FieldDataCollection_VisualizingFieldData_PlotWorkZone: https://github.com/ivsg-psu/FieldDataCollection_VisualizingFieldData_PlotWorkZone
