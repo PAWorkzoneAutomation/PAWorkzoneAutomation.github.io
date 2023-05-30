@@ -15,6 +15,14 @@ Traffic and vehicle simulations
 * `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO`_: Launch page to get started with SUMO (IVSG - PSU internal)
 * `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA-SUMOCosimulation`_: Launch page to get started with CARLA-SUMO cosimulation (IVSG - PSU internal)
 
+* The following table shows the three roadway situations for the simulation: urban, artirial and highway, including the location we picked in State College and the corresponding data link.
+.. csv-table:: 3 Situations Sumamry
+   :file: tables/three_situations.csv
+   :header-rows: 1
+* The following table shows the summary about whether the considered three roadway situations could be applied to each of the proposed 20 scenarios. 
+.. csv-table:: 20 Scenarios - 3 Situations Sumamry
+   :file: tables/20scenarios.csv
+   :header-rows: 1
 
 Mapping
 --------------------------
