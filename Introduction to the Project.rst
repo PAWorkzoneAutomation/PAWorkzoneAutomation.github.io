@@ -61,7 +61,7 @@ Team members
 | .. image:: Images/wushuang_withtitle.jpg     |.. image:: Images/Vaishnavi_withtitle.jpg     |.. image:: Images/Marcus_title.jpg        |
 |   :scale: 75                                 |  :scale: 75                                  |  :scale: 75                              |
 +----------------------------------------------+----------------------------------------------+------------------------------------------+
-| .. image:: Images/Xinyu_title.jpg            |.. image:: Images/LIn.jpg                     |                                          |
+| .. image:: Images/Xinyu_title.jpg            |.. image:: Images/Lin_withtitle.jpg           |                                          |
 |   :scale: 12                                 |   :scale: 10                                 |                                          |
 +----------------------------------------------+----------------------------------------------+------------------------------------------+
 
