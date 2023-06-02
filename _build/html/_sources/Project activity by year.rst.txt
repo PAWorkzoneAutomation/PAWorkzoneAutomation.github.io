@@ -26,15 +26,28 @@ Mapping
 
 About the Mapping Van: 
 ::::::::::::::::::::::::
-* `Mapping_MappingVan_About`_: General information about the Penn State Mapping Van
+
+* `Mapping_MappingVan_About`_: General information about the Penn State Mapping Van. Mapping van is shown below. 
+
+.. image:: Images/MappingVanAtBeaver.png
 
 Choice of Coordinate Systems for Wide Areas: 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-* `Mapping_CoordinateSystems_WideAreas`_: Discussion of coordinate systems and the errors each can introduce when mapping large areas (cloned from IVSG on 2023 04 03).
+* `Mapping_CoordinateSystems_WideAreas`_: Discussion of coordinate systems and the errors each can introduce when mapping large areas (cloned from IVSG on 2023 04 03).The coordinate system conversions through simulation work are as below.
+
+.. image:: Images/Coordinat_System_Conversion.png
 
 
 Hardware: 
 ~~~~~~~~~~~~~~~~~~~~~
+
+
+* `Hardware_MappingVanHardware_CADdrawings`_: The mapping van measurements used for the GPS antenna calibration. Sample CAD drawings are below. 
+
+.. image:: Images/MappingVanCADDrawing.png
+
+.. image:: Images/labelledSensorsCADDrawing.png
+
 
 Power System: 
 
@@ -69,6 +82,10 @@ Sensors - GPS:
 
 * `Hardware_MappingVanHardware_GPS`_: Setup of GPS. (IVSG - PSU internal)
 
+* `FieldDataCollection_GPSRelatedCodes_RTKCorrectionService`_: Setting up and using of Real-time kinematic (RTK) via Networked Transport of RTCM via Internet Protocol (NTRIP).(IVSG - PSU internal).
+
+.. image:: Images/BaseStateionsLocation.png
+
 Sensors - IMU:
 
 * `Hardware_MappingVanHardware_IMU`_: Setup of IMU. (IVSG - PSU internal)
@@ -101,6 +118,8 @@ Maps and scenarios:
 
 * `FieldDataCollection_VisualizingFieldData_PlotWorkZone`_: A repo displaying the scenarios and their descriptions. (IVSG - PSU internal)
 
+.. image:: Images/plotWorkZone.png
+
 Data Parsing:
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -112,9 +131,46 @@ Data Parsing:
 
 Year 2
 ---------------------------------
+
+The data flow of the simulation is below: 
+
+.. image:: Images/PennDOT_Simulation_Workflow_V2.drawio.png
+
 Simulating construction scenarios:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * `Simulating a traffic flow on Penn State test track`_: The work in this area involves information to guide how to simulate a traffic flow on Penn State test track. (IVSG - PSU internal)
+
+.. image:: Images/simulateFlowOnTrack.png
+
+* The following table shows the three roadway situations for the simulation: urban, artirial and highway, including the location we picked in State College and the corresponding data link.
+
+.. csv-table:: 3 Situations Sumamry
+   :file: tables/three_situations.csv
+   :header-rows: 1
+
+* The following table shows the summary about whether the considered three roadway situations could be applied to each of the proposed 20 scenarios. 
+
+.. csv-table:: 20 Scenarios - 3 Situations Sumamry
+   :file: tables/20scenarios.csv
+   :header-rows: 1
+
+Simulation post processing:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* `FeatureExtraction_Association_PointToPointAssociation`_: Functions are provided to determine matches between data sets of (X,Y) points, store and compare groups of associated points (patch objects), and determine intersections between patch objects and circular arcs (useful for collision detection).
+
+.. image:: Images/fcn_Points_fillPointSampleSets_Ex3.jpg
+
+* `FeatureExtraction_SafetyMetrics_SafetyMetricsClass`_: MATLAB code implementation of functions that perform safety metric calculations given a set of objects and a path through them.
+
+.. figure:: Images/TTC.png
+   :align: center
+
+   Time to collision
+
+.. figure:: Images/lanechange.gif
+   :align: center
+
+   Demo of vehicle doing a lane change
 
 Year 3
 ----------------------------------
@@ -167,3 +223,8 @@ To be added:
 
 .. _FieldDataCollection_TypicalHardwareSetups_LIDARs_CeptonX90Install: https://github.com/ivsg-psu/FieldDataCollection_TypicalHardwareSetups_LIDARs_CeptonX90Install
 .. _FieldDataCollection_VisualizingFieldData_PlotWorkZone: https://github.com/ivsg-psu/FieldDataCollection_VisualizingFieldData_PlotWorkZone
+
+.. _Hardware_MappingVanHardware_CADdrawings: https://github.com/ivsg-psu/Hardware_MappingVanHardware_CADdrawings
+.. _FieldDataCollection_GPSRelatedCodes_RTKCorrectionService: https://github.com/ivsg-psu/FieldDataCollection_GPSRelatedCodes_RTKCorrectionService
+.. _FeatureExtraction_Association_PointToPointAssociation: https://github.com/ivsg-psu/FeatureExtraction_Association_PointToPointAssociation
+.. _FeatureExtraction_SafetyMetrics_SafetyMetricsClass: https://github.com/ivsg-psu/FeatureExtraction_SafetyMetrics_SafetyMetricsClass

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project activity by modality &mdash; PAWorkzoneAutomation 1.0 documentation</title>
@@ -11,9 +11,10 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="_static/jquery.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
@@ -28,18 +29,14 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="index.html" class="icon icon-home">
-            PAWorkzoneAutomation
+            <a href="index.html" class="icon icon-home"> PAWorkzoneAutomation
           </a>
               <div class="version">
                 1.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -52,6 +49,8 @@
 <li class="toctree-l1"><a class="reference internal" href="Project%20activity%20by%20topic.html">Project activity by topic</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Project activity by modality</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#traffic-and-vehicle-simulation">Traffic and Vehicle Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simulating-construction-scenarios">Simulating construction scenarios:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simulation-post-processing">Simulation post processing:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#test-track">Test track</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#field-test">Field test</a></li>
 </ul>
@@ -72,7 +71,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="index.html" class="icon icon-home"></a></li>
       <li class="breadcrumb-item active">Project activity by modality</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/Project activity by modality.rst.txt" rel="nofollow"> View page source</a>
@@ -92,7 +91,616 @@
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA">TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA</a>: Launch page to get started with CARLA. (IVSG - PSU internal)</p></li>
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO">TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO</a>:Launch page to get started with SUMO. (IVSG - PSU internal)</p></li>
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA-SUMOCosimulation">TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA-SUMOCosimulation</a>: Launch page to get started with CARLA-SUMO cosimulation. (IVSG - PSU internal)</p></li>
+<li><p>The following table shows the three roadway situations for the simulation: urban, artirial and highway, including the location we picked in State College and the corresponding data link.</p></li>
 </ul>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">3 Situations Sumamry</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Situations</p></th>
+<th class="head"><p>Ciity</p></th>
+<th class="head"><p>Location Descreption</p></th>
+<th class="head"><p>Site Number</p></th>
+<th class="head"><p>Data Year</p></th>
+<th class="head"><p>Peak Time</p></th>
+<th class="head"><p>Peak Volume</p></th>
+<th class="head"><p>Off-peak Time</p></th>
+<th class="head"><p>Offf-peak Volume</p></th>
+<th class="head"><p>Link to Real Traffic Data</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Urban</p></td>
+<td><p>PA, State College</p></td>
+<td><dl class="simple">
+<dt>BEAVER AV</dt><dd><p>Between Sparks St and Gill St</p>
+</dd>
+</dl>
+</td>
+<td><p>1134</p></td>
+<td><p>2016</p></td>
+<td><p>8AM</p></td>
+<td><p>696</p></td>
+<td><p>1PM</p></td>
+<td><p>368</p></td>
+<td><p><a class="reference external" href="https://gis.penndot.gov/tire/tms-sites/1134/report">https://gis.penndot.gov/tire/tms-sites/1134/report</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Arterial</p></td>
+<td><p>PA, State College</p></td>
+<td><dl class="simple">
+<dt>COLLEGE AV</dt><dd><p>0.65 MILE NORTHEAST OF SR-3022 (UNIVERSITY DR) (CENTER LANE IS NB)</p>
+</dd>
+</dl>
+</td>
+<td><p>1136</p></td>
+<td><p>2016</p></td>
+<td><p>5PM</p></td>
+<td><p>2374</p></td>
+<td><p>9AM</p></td>
+<td><p>1212</p></td>
+<td><p><a class="reference external" href="https://gis.penndot.gov/tire/tms-sites/1136/report">https://gis.penndot.gov/tire/tms-sites/1136/report</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Highway</p></td>
+<td><p>PA, State College</p></td>
+<td><dl class="simple">
+<dt>I-99</dt><dd><p>1.35 Mile North of Exit 71</p>
+</dd>
+</dl>
+</td>
+<td><p>1180</p></td>
+<td><p>2017</p></td>
+<td><p>4PM</p></td>
+<td><p>4046</p></td>
+<td><p>9AM</p></td>
+<td><p>2321</p></td>
+<td><p><a class="reference external" href="https://gis.penndot.gov/tire/tms-sites/1180/report">https://gis.penndot.gov/tire/tms-sites/1180/report</a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>The following table shows the summary about whether the considered three roadway situations could be applied to each of the proposed 20 scenarios.</p></li>
+</ul>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">20 Scenarios - 3 Situations Sumamry</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Scenarios</p></th>
+<th class="head"><p>Scenarios Summary</p></th>
+<th class="head"><p>Urban</p></th>
+<th class="head"><p>Artirial</p></th>
+<th class="head"><p>Highway</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1.1</p></td>
+<td><dl class="simple">
+<dt>WORK ON OR BEYOND SHOULDER</dt><dd><p>SINGLE LANE APPROACH
+SHOULDER WORK W/ MINOR ENCROACHMENT</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.2</p></td>
+<td><dl class="simple">
+<dt>ROAD CLOSURE WITH DETOUR</dt><dd><p>STANDARD ORANGE DETOUR SIGN</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>1.3</p></td>
+<td><dl class="simple">
+<dt>WORK ON SINGLE LANE APPROACH </dt><dd><p>SELF-REGULATING LANE SHIFT INTO OPPOSING LANE</p>
+</dd>
+</dl>
+</td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.4</p></td>
+<td><dl class="simple">
+<dt>WORK ON SINGLE LANE APPROACH </dt><dd><p>SELF-REGULATING LANE SHIFT INTO CENTER LEFT-TURN LANE</p>
+</dd>
+</dl>
+</td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>1.5</p></td>
+<td><dl class="simple">
+<dt>WORK ON A SINGLE-LANE APPROACH</dt><dd><p>WORK IN CENTER LEFT-TURN LANE</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.6</p></td>
+<td><dl class="simple">
+<dt>WORK ON MULTI-LANE APPROACH</dt><dd><p>WORK IN RIGHT LANE UNDIVIDED HIGHWAY</p>
+</dd>
+</dl>
+</td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>2.1</p></td>
+<td><dl class="simple">
+<dt>ROAD CLOSURE WITH DETOUR</dt><dd><p>DETOUR OF A NUMBERED TRAFFIC ROUTE</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.2</p></td>
+<td><dl class="simple">
+<dt>WORK ON A SINGLE-LANE APPROACH</dt><dd><p>SELF-REGULATING STOP-CONTROL</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>2.3</p></td>
+<td><p>LANE SHIFT TO TEMPORARY ROADWAY</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.4</p></td>
+<td><dl class="simple">
+<dt>WORK ON SINGLE-LANE APPROACH </dt><dd><p>TRAILOR-MOUNTED SIGNALS</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>3.1</p></td>
+<td><dl class="simple">
+<dt>WORK ON SINGLE-LANE APPROACH </dt><dd><p>MOVING LANE CLOSURE</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>4.1a</p></td>
+<td><dl class="simple">
+<dt>WORK ON 2-LANE APPROACH</dt><dd><p>WORK IN RIGHT LANE</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>4.1b</p></td>
+<td><dl class="simple">
+<dt>WORK ON 2-LANE APPROACH</dt><dd><p>WORK IN RIGHT LANE 
+(PENNSYLVANIA TURNPIKE)</p>
+</dd>
+</dl>
+</td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>4.2</p></td>
+<td><dl class="simple">
+<dt>WORK NEAR INTERCHANGE RAMPS</dt><dd><p>WORK IN RIGHT LANE NEAR EXIT RAMP</p>
+</dd>
+</dl>
+</td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>4.3</p></td>
+<td><dl class="simple">
+<dt>WORK NEAR INTERCHANGE RAMPS</dt><dd><p>WORK IN ENTRANCE RAMP W/ STOP CONTROL</p>
+</dd>
+</dl>
+</td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.1a</p></td>
+<td><dl class="simple">
+<dt>WORK ON 2-LANE APPROACH</dt><dd><p>WORK IN RIGHT LANE (MOBILE)</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>5.1b</p></td>
+<td><dl class="simple">
+<dt>WORK ON 2-LANE APPROACH</dt><dd><p>WORK IN RIGHT LANE (MOBILE) 
+(PENNSYLVANIA TURNPIKE)</p>
+</dd>
+</dl>
+</td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.2</p></td>
+<td><dl class="simple">
+<dt>WORK ON 3-LANE APPROACH</dt><dd><p>WORK IN LEFT LANE (MOBILE)</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>6.1</p></td>
+<td><dl class="simple">
+<dt>WORK ON 2-LANE APPROACH</dt><dd><p>LONG TERM SHOULDER USE</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+</tbody>
+</table>
+<p>The data flow of the simulation is below:</p>
+<img alt="_images/PennDOT_Simulation_Workflow_V2.drawio.png" src="_images/PennDOT_Simulation_Workflow_V2.drawio.png" />
+</section>
+<section id="simulating-construction-scenarios">
+<h2>Simulating construction scenarios:<a class="headerlink" href="#simulating-construction-scenarios" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ivsg-psu/TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO/blob/main/Documents/Simulating%20test%20track%20in%20SUMO.pptx">Simulating a traffic flow on Penn State test track</a>: The work in this area involves information to guide how to simulate a traffic flow on Penn State test track. (IVSG - PSU internal)</p></li>
+</ul>
+<img alt="_images/simulateFlowOnTrack.png" src="_images/simulateFlowOnTrack.png" />
+<ul class="simple">
+<li><p>The following table shows the three roadway situations for the simulation: urban, artirial and highway, including the location we picked in State College and the corresponding data link.</p></li>
+</ul>
+<table class="docutils align-default" id="id3">
+<caption><span class="caption-text">3 Situations Sumamry</span><a class="headerlink" href="#id3" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Situations</p></th>
+<th class="head"><p>Ciity</p></th>
+<th class="head"><p>Location Descreption</p></th>
+<th class="head"><p>Site Number</p></th>
+<th class="head"><p>Data Year</p></th>
+<th class="head"><p>Peak Time</p></th>
+<th class="head"><p>Peak Volume</p></th>
+<th class="head"><p>Off-peak Time</p></th>
+<th class="head"><p>Offf-peak Volume</p></th>
+<th class="head"><p>Link to Real Traffic Data</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Urban</p></td>
+<td><p>PA, State College</p></td>
+<td><dl class="simple">
+<dt>BEAVER AV</dt><dd><p>Between Sparks St and Gill St</p>
+</dd>
+</dl>
+</td>
+<td><p>1134</p></td>
+<td><p>2016</p></td>
+<td><p>8AM</p></td>
+<td><p>696</p></td>
+<td><p>1PM</p></td>
+<td><p>368</p></td>
+<td><p><a class="reference external" href="https://gis.penndot.gov/tire/tms-sites/1134/report">https://gis.penndot.gov/tire/tms-sites/1134/report</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Arterial</p></td>
+<td><p>PA, State College</p></td>
+<td><dl class="simple">
+<dt>COLLEGE AV</dt><dd><p>0.65 MILE NORTHEAST OF SR-3022 (UNIVERSITY DR) (CENTER LANE IS NB)</p>
+</dd>
+</dl>
+</td>
+<td><p>1136</p></td>
+<td><p>2016</p></td>
+<td><p>5PM</p></td>
+<td><p>2374</p></td>
+<td><p>9AM</p></td>
+<td><p>1212</p></td>
+<td><p><a class="reference external" href="https://gis.penndot.gov/tire/tms-sites/1136/report">https://gis.penndot.gov/tire/tms-sites/1136/report</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Highway</p></td>
+<td><p>PA, State College</p></td>
+<td><dl class="simple">
+<dt>I-99</dt><dd><p>1.35 Mile North of Exit 71</p>
+</dd>
+</dl>
+</td>
+<td><p>1180</p></td>
+<td><p>2017</p></td>
+<td><p>4PM</p></td>
+<td><p>4046</p></td>
+<td><p>9AM</p></td>
+<td><p>2321</p></td>
+<td><p><a class="reference external" href="https://gis.penndot.gov/tire/tms-sites/1180/report">https://gis.penndot.gov/tire/tms-sites/1180/report</a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>The following table shows the summary about whether the considered three roadway situations could be applied to each of the proposed 20 scenarios.</p></li>
+</ul>
+<table class="docutils align-default" id="id4">
+<caption><span class="caption-text">20 Scenarios - 3 Situations Sumamry</span><a class="headerlink" href="#id4" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Scenarios</p></th>
+<th class="head"><p>Scenarios Summary</p></th>
+<th class="head"><p>Urban</p></th>
+<th class="head"><p>Artirial</p></th>
+<th class="head"><p>Highway</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1.1</p></td>
+<td><dl class="simple">
+<dt>WORK ON OR BEYOND SHOULDER</dt><dd><p>SINGLE LANE APPROACH
+SHOULDER WORK W/ MINOR ENCROACHMENT</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.2</p></td>
+<td><dl class="simple">
+<dt>ROAD CLOSURE WITH DETOUR</dt><dd><p>STANDARD ORANGE DETOUR SIGN</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>1.3</p></td>
+<td><dl class="simple">
+<dt>WORK ON SINGLE LANE APPROACH </dt><dd><p>SELF-REGULATING LANE SHIFT INTO OPPOSING LANE</p>
+</dd>
+</dl>
+</td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.4</p></td>
+<td><dl class="simple">
+<dt>WORK ON SINGLE LANE APPROACH </dt><dd><p>SELF-REGULATING LANE SHIFT INTO CENTER LEFT-TURN LANE</p>
+</dd>
+</dl>
+</td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>1.5</p></td>
+<td><dl class="simple">
+<dt>WORK ON A SINGLE-LANE APPROACH</dt><dd><p>WORK IN CENTER LEFT-TURN LANE</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.6</p></td>
+<td><dl class="simple">
+<dt>WORK ON MULTI-LANE APPROACH</dt><dd><p>WORK IN RIGHT LANE UNDIVIDED HIGHWAY</p>
+</dd>
+</dl>
+</td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>2.1</p></td>
+<td><dl class="simple">
+<dt>ROAD CLOSURE WITH DETOUR</dt><dd><p>DETOUR OF A NUMBERED TRAFFIC ROUTE</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.2</p></td>
+<td><dl class="simple">
+<dt>WORK ON A SINGLE-LANE APPROACH</dt><dd><p>SELF-REGULATING STOP-CONTROL</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>2.3</p></td>
+<td><p>LANE SHIFT TO TEMPORARY ROADWAY</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.4</p></td>
+<td><dl class="simple">
+<dt>WORK ON SINGLE-LANE APPROACH </dt><dd><p>TRAILOR-MOUNTED SIGNALS</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>3.1</p></td>
+<td><dl class="simple">
+<dt>WORK ON SINGLE-LANE APPROACH </dt><dd><p>MOVING LANE CLOSURE</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>4.1a</p></td>
+<td><dl class="simple">
+<dt>WORK ON 2-LANE APPROACH</dt><dd><p>WORK IN RIGHT LANE</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>4.1b</p></td>
+<td><dl class="simple">
+<dt>WORK ON 2-LANE APPROACH</dt><dd><p>WORK IN RIGHT LANE 
+(PENNSYLVANIA TURNPIKE)</p>
+</dd>
+</dl>
+</td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>4.2</p></td>
+<td><dl class="simple">
+<dt>WORK NEAR INTERCHANGE RAMPS</dt><dd><p>WORK IN RIGHT LANE NEAR EXIT RAMP</p>
+</dd>
+</dl>
+</td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>4.3</p></td>
+<td><dl class="simple">
+<dt>WORK NEAR INTERCHANGE RAMPS</dt><dd><p>WORK IN ENTRANCE RAMP W/ STOP CONTROL</p>
+</dd>
+</dl>
+</td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.1a</p></td>
+<td><dl class="simple">
+<dt>WORK ON 2-LANE APPROACH</dt><dd><p>WORK IN RIGHT LANE (MOBILE)</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>5.1b</p></td>
+<td><dl class="simple">
+<dt>WORK ON 2-LANE APPROACH</dt><dd><p>WORK IN RIGHT LANE (MOBILE) 
+(PENNSYLVANIA TURNPIKE)</p>
+</dd>
+</dl>
+</td>
+<td><p>N</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.2</p></td>
+<td><dl class="simple">
+<dt>WORK ON 3-LANE APPROACH</dt><dd><p>WORK IN LEFT LANE (MOBILE)</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>6.1</p></td>
+<td><dl class="simple">
+<dt>WORK ON 2-LANE APPROACH</dt><dd><p>LONG TERM SHOULDER USE</p>
+</dd>
+</dl>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="simulation-post-processing">
+<h2>Simulation post processing:<a class="headerlink" href="#simulation-post-processing" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ivsg-psu/FeatureExtraction_Association_PointToPointAssociation">FeatureExtraction_Association_PointToPointAssociation</a>: Functions are provided to determine matches between data sets of (X,Y) points, store and compare groups of associated points (patch objects), and determine intersections between patch objects and circular arcs (useful for collision detection).</p></li>
+</ul>
+<img alt="_images/fcn_Points_fillPointSampleSets_Ex3.jpg" src="_images/fcn_Points_fillPointSampleSets_Ex3.jpg" />
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ivsg-psu/FeatureExtraction_SafetyMetrics_SafetyMetricsClass">FeatureExtraction_SafetyMetrics_SafetyMetricsClass</a>: MATLAB code implementation of functions that perform safety metric calculations given a set of objects and a path through them.</p></li>
+</ul>
+<figure class="align-center" id="id5">
+<img alt="_images/TTC.png" src="_images/TTC.png" />
+<figcaption>
+<p><span class="caption-text">Time to collision</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id6">
+<img alt="_images/lanechange.gif" src="_images/lanechange.gif" />
+<figcaption>
+<p><span class="caption-text">Demo of vehicle doing a lane change</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 <section id="test-track">
 <h2>Test track<a class="headerlink" href="#test-track" title="Permalink to this heading"></a></h2>
