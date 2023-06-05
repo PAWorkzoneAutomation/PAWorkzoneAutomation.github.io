@@ -16,11 +16,11 @@ Decide how to do traffic and vehicle simulations
 
 .. image:: Images/ADS_overview_diagram.png
    
-* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA`_: Launch page to get started with CARLA 
+* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA`_: Launch page to get started with CARLA (cloned from IVSG on 2023 06 05)
 
 .. image:: Images/CARLA_day.png
 
-* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO`_: Launch page to get started with SUMO 
+* `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO`_: Launch page to get started with SUMO (cloned from IVSG on 2023 06 05)
 
 .. image:: Images/SUMODemo.png
 
