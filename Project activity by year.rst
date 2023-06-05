@@ -11,8 +11,8 @@ Year 1
 
 
 
-Traffic and vehicle simulations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Decide how to do traffic and vehicle simulations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: Images/ADS_overview_diagram.png
    
@@ -39,7 +39,7 @@ Choice of Coordinate Systems for Wide Areas
 .. image:: Images/Coordinat_System_Conversion.png
 
 
-Hardware
+Hardware installation
 ~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -96,12 +96,7 @@ Sensors - Steering System
 
 
 
-Data Processing 
-~~~~~~~~~~~~~~~~~
 
-Processing GPS Data 
-
-* `DataProcessing_GPS_GPSConversionMethods`_: A repo sharing the algorithms used for GPS conversions, e.g. LLA to ENU (cloned from IVSG on 2023 04 03). 
 
 
 
@@ -123,7 +118,7 @@ The data flow of the simulation is below
 
 .. image:: Images/PennDOT_Simulation_Workflow_V2.drawio.png
 
-
+For zoomed-in view, please see: https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/blob/main/Images/PennDOT_Simulation_Workflow_V2.drawio.png
 
 Simulating construction scenarios
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -178,6 +173,13 @@ GPS and CORS Calibration
 * `FieldDataCollection_GPSRelatedCodes_RTKCorrectionService`_: Setting up and using of Real-time kinematic (RTK) via Networked Transport of RTCM via Internet Protocol (NTRIP).(IVSG - PSU internal).
 
 .. image:: Images/BaseStateionsLocation.png
+
+Data Processing 
+~~~~~~~~~~~~~~~~~
+
+Processing GPS Data 
+
+* `DataProcessing_GPS_GPSConversionMethods`_: A repo sharing the algorithms used for GPS conversions, e.g. LLA to ENU (cloned from IVSG on 2023 04 03). 
 
 Maps and scenarios 
 ~~~~~~~~~~~~~~~~~~~~~~
