@@ -1,0 +1,11 @@
+﻿Situations,Highway
+City,"PA, State College"
+Location Description,"I-99
+ 1.35 Mile North of Exit 71"
+Site Number ,1180
+Data Time,"Dec 05, 2017"
+Peak Time,4PM
+Peak Volume (Vehicles/h),4046
+Off-peak Time,9AM
+Off-peak Volume (Vehicles/h),2321
+Link to Real Traffic Data,https://gis.penndot.gov/tire/tms-sites/1180/report

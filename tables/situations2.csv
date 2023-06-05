@@ -1,0 +1,11 @@
+﻿Situations,Arterial
+City,"PA, State College"
+Location Description,"COLLEGE AV
+ 0.65 MILE NORTHEAST OF SR-3022"
+Site Number ,1136
+Data Time,"Nov 16, 2016"
+Peak Time,5PM
+Peak Volume (Vehicles/h),2374
+Off-peak Time,9AM
+Off-peak Volume (Vehicles/h),1212
+Link to Real Traffic Data,https://gis.penndot.gov/tire/tms-sites/1136/report

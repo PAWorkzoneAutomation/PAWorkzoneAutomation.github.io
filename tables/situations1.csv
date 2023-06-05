@@ -1,0 +1,11 @@
+﻿Situations,Urban
+City,"PA, State College"
+Location Description,"BEAVER AV
+ Between Sparks St and Gill St"
+Site Number ,1134
+Data Time,"Nov 16, 2016"
+Peak Time,8AM
+Peak Volume (Vehicles/h),696
+Off-peak Time,1PM
+Off-peak Volume (Vehicles/h),368
+Link to Real Traffic Data,https://gis.penndot.gov/tire/tms-sites/1134/report

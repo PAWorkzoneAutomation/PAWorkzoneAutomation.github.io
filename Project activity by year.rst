@@ -142,10 +142,18 @@ Simulating construction scenarios:
 
 .. image:: Images/simulateFlowOnTrack.png
 
-* The following table shows the three roadway situations for the simulation: urban, artirial and highway, including the location we picked in State College and the corresponding data link.
+* The following tables show the three roadway situations for the simulation: urban, artirial and highway, including the location we picked in State College and the corresponding data link.
 
-.. csv-table:: 3 Situations Sumamry
-   :file: tables/three_situations.csv
+.. csv-table:: Situation 1 Summary
+   :file: tables/situations1.csv
+   :header-rows: 1
+
+.. csv-table:: Situation 2 Summary
+   :file: tables/situations2.csv
+   :header-rows: 1
+
+.. csv-table:: Situation 3 Summary
+   :file: tables/situations3.csv
    :header-rows: 1
 
 * The following table shows the summary about whether the considered three roadway situations could be applied to each of the proposed 20 scenarios. 
