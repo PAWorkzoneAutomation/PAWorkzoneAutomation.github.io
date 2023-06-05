@@ -1,7 +1,33 @@
-﻿Situations,Ciity,Location Descreption,Site Number ,Data Year,Peak Time,Peak Volume,Off-peak Time,Offf-peak Volume,Link to Real Traffic Data
-Urban,"PA, State College","BEAVER AV
- Between Sparks St and Gill St",1134,2016,8AM,696,1PM,368,https://gis.penndot.gov/tire/tms-sites/1134/report
-Arterial,"PA, State College","COLLEGE AV
- 0.65 MILE NORTHEAST OF SR-3022 (UNIVERSITY DR) (CENTER LANE IS NB)",1136,2016,5PM,2374,9AM,1212,https://gis.penndot.gov/tire/tms-sites/1136/report
-Highway,"PA, State College","I-99
- 1.35 Mile North of Exit 71",1180,2017,4PM,4046,9AM,2321,https://gis.penndot.gov/tire/tms-sites/1180/report
+﻿Situations,Urban
+Ciity,"PA, State College"
+Location Description,"BEAVER AV
+ Between Sparks St and Gill St"
+Site Number ,1134
+Data Time,"Nov 16, 2016"
+Peak Time,8AM
+Peak Volume,696
+Off-peak Time,1PM
+Off-peak Volume,368
+Link to Real Traffic Data,https://gis.penndot.gov/tire/tms-sites/1134/report
+Situations,Arterial
+Ciity,"PA, State College"
+Location Description,"COLLEGE AV
+ 0.65 MILE NORTHEAST OF SR-3022 "
+Site Number ,1136
+Data Time,"Nov 16, 2016"
+Peak Time,5PM
+Peak Volume,2374
+Off-peak Time,9AM
+Off-peak Volume,1212
+Link to Real Traffic Data,https://gis.penndot.gov/tire/tms-sites/1136/report
+Situations,Highway
+Ciity,"PA, State College"
+Location Description,"I-99
+ 1.35 Mile North of Exit 71"
+Site Number ,1180
+Data Time,"Dec 05, 2016"
+Peak Time,4PM
+Peak Volume,4046
+Off-peak Time,9AM
+Off-peak Volume,2321
+Link to Real Traffic Data,https://gis.penndot.gov/tire/tms-sites/1180/report
