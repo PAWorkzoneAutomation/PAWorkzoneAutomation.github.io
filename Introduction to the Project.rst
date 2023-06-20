@@ -61,8 +61,8 @@ Team members
 | .. image:: Images/wushuang_withtitle.jpg     |.. image:: Images/Vaishnavi_withtitle.jpg     |.. image:: Images/Marcus_title.jpg        |
 |   :scale: 75                                 |  :scale: 75                                  |  :scale: 75                              |
 +----------------------------------------------+----------------------------------------------+------------------------------------------+
-| .. image:: Images/Xinyu_title.jpg            |.. image:: Images/Lin_withtitle.JPG           |                                          |
-|   :scale: 12                                 |   :scale: 8                                  |                                          |
+| .. image:: Images/Xinyu_title.jpg            |.. image:: Images/Lin_withtitle.JPG           |.. image:: Images/Mariam_title.JPG                                          |
+|   :scale: 12                                 |   :scale: 8                                  |  :scale: 8                                        |
 +----------------------------------------------+----------------------------------------------+------------------------------------------+
 
 Groups with Related Interests
