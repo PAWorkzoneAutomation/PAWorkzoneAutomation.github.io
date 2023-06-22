@@ -70,6 +70,10 @@ Groups with Related Interests
 
 * `The OpenCDA project (UCLA mobility lab)`_ : A SIMULATION tool integrated with a prototype cooperative driving automation (CDA; see SAE J3216) pipeline as well as regular automated driving components (e.g., perception, localization, planning, control).
 * `Michael Baker International`_ : A leading provider of engineering and consulting services.
+* `Automated Vehicles for All`_: A project to develop a systematic and scalable approach to the safe integration of cooperative automated vehicles (CAVs) into the nation's transportation system.
+* `Automated Driving Systems (ADS) for Rural America`_: a project that is testing the use of automated driving technologies on high-speed, rural roadways to examine and understand the unique needs of rural environments, while working toward solutions that improve safety and mobility.
+
+
 
 Publications
 -------------------
@@ -102,3 +106,5 @@ test 20230523 - vaishnavi
 .. _here: https://www.penndot.gov/ProjectAndPrograms/ResearchandTesting/Autonomous%20_Vehicles/Pages/ADS-Demonstration.aspx
 .. _The OpenCDA project (UCLA mobility lab): https://opencda-documentation.readthedocs.io/en/latest/index.html
 .. _Michael Baker International: https://mbakerintl.com/
+.. _Automated Vehicles for All: https://avadataportal.web.illinois.edu/index.html
+.. _Automated Driving Systems (ADS) for Rural America: https://adsforruralamerica.uiowa.edu/
