@@ -10,6 +10,9 @@ The automatic generation of scenarios for simulation that follow the workflow as
 .. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/AutomaticGenerationOfScenarios.drawio.png
    :align: center
 
+
+The source file of this workflow diagram can be found here: https://drive.google.com/file/d/18G0Bb3WNbk9Mf6DgM548p8j4xtOKnf1m/view?usp=sharing
+
 Scenarios defined in KMZ format are loaded into GIS software, such as Google Earth.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
