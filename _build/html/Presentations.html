@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presentations &mdash; PAWorkzoneAutomation 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Project activity by member" href="Project%20activity%20by%20member.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> PAWorkzoneAutomation
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction%20to%20the%20Project.html">Introduction to the Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Project%20activity%20by%20year.html">Project activity by year</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Project%20activity%20by%20topic.html">Project activity by topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Project%20activity%20by%20modality.html">Project activity by modality</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Project%20activity%20by%20member.html">Project activity by member</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Presentations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#automatic-generation-of-work-zone-simulation-scenarios">Automatic generation of work zone simulation scenarios</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-automatic-generation-of-scenarios-for-simulation-that-follow-the-workflow-as-below">The automatic generation of scenarios for simulation that follow the workflow as below:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scenarios-defined-in-kmz-format-are-loaded-into-gis-software-such-as-google-earth">Scenarios defined in KMZ format are loaded into GIS software, such as Google Earth.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-kmz-definition-is-then-parsed-to-kml-where-coordinates-are-readable">The KMZ definition is then parsed to KML, where coordinates are readable.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-kml-data-we-can-plot-all-the-scenarios-with-each-other-to-identify-common-lane-markers-and-road-segments">Using the KML data, we can plot all the scenarios with each other to identify common lane markers and road segments.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-enu-coordinates-are-then-resampled-for-geometric-smoothness-and-to-avoid-large-gaps-which-cause-problems-with-xodr-formats">The ENU coordinates are then resampled for geometric smoothness and to avoid large gaps which cause problems with XODR formats.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-resampled-enu-coordinates-are-then-converted-to-xodr-definition">The resampled ENU coordinates are then converted to XODR definition.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-xodr-file-is-then-editable-to-apply-to-different-scenarios-for-example-changing-the-lane-width-below-shows-an-example-of-increasing-the-right-driving-lane-width">The XODR file is then editable to apply to different scenarios, for example, changing the lane width. Below shows an example of increasing the right driving lane width.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#below-shows-another-example-of-increasing-the-right-driving-lane-width-at-500-meters-from-the-start-line">Below shows another example of increasing the right driving lane width at 500 meters from the start line.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xodr-can-be-imported-into-roadrunner">XODR can be imported into RoadRunner.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roadrunner-exports-into-carla-and-sumo">RoadRunner exports into CARLA and SUMO.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PAWorkzoneAutomation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Presentations</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Presentations.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="presentations">
+<h1>Presentations<a class="headerlink" href="#presentations" title="Permalink to this heading"></a></h1>
+<section id="automatic-generation-of-work-zone-simulation-scenarios">
+<h2>Automatic generation of work zone simulation scenarios<a class="headerlink" href="#automatic-generation-of-work-zone-simulation-scenarios" title="Permalink to this heading"></a></h2>
+<section id="the-automatic-generation-of-scenarios-for-simulation-that-follow-the-workflow-as-below">
+<h3>The automatic generation of scenarios for simulation that follow the workflow as below:<a class="headerlink" href="#the-automatic-generation-of-scenarios-for-simulation-that-follow-the-workflow-as-below" title="Permalink to this heading"></a></h3>
+<figure class="align-center">
+<img alt="_images/AutomaticGenerationOfScenarios.drawio.png" src="_images/AutomaticGenerationOfScenarios.drawio.png" />
+</figure>
+</section>
+<section id="scenarios-defined-in-kmz-format-are-loaded-into-gis-software-such-as-google-earth">
+<h3>Scenarios defined in KMZ format are loaded into GIS software, such as Google Earth.<a class="headerlink" href="#scenarios-defined-in-kmz-format-are-loaded-into-gis-software-such-as-google-earth" title="Permalink to this heading"></a></h3>
+<figure class="align-center" id="id1">
+<img alt="_images/googleEarth.png" src="_images/googleEarth.png" />
+<figcaption>
+<p><span class="caption-text">This contains all data for the CAD definition, but most of this is not needed within final road definition as per ASAM OpenDRIVE.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="the-kmz-definition-is-then-parsed-to-kml-where-coordinates-are-readable">
+<h3>The KMZ definition is then parsed to KML, where coordinates are readable.<a class="headerlink" href="#the-kmz-definition-is-then-parsed-to-kml-where-coordinates-are-readable" title="Permalink to this heading"></a></h3>
+<figure class="align-center">
+<img alt="_images/KML.PNG" src="_images/KML.PNG" />
+</figure>
+</section>
+<section id="using-the-kml-data-we-can-plot-all-the-scenarios-with-each-other-to-identify-common-lane-markers-and-road-segments">
+<h3>Using the KML data, we can plot all the scenarios with each other to identify common lane markers and road segments.<a class="headerlink" href="#using-the-kml-data-we-can-plot-all-the-scenarios-with-each-other-to-identify-common-lane-markers-and-road-segments" title="Permalink to this heading"></a></h3>
+<figure class="align-center">
+<img alt="_images/testTrackENU.png" src="_images/testTrackENU.png" />
+</figure>
+<p>The driving lanes in LLA coordinates are then transformed into ENU coordinates. This uses the Cartesian coordinates to ease the creation of XODR definitions.</p>
+</section>
+<section id="the-enu-coordinates-are-then-resampled-for-geometric-smoothness-and-to-avoid-large-gaps-which-cause-problems-with-xodr-formats">
+<h3>The ENU coordinates are then resampled for geometric smoothness and to avoid large gaps which cause problems with XODR formats.<a class="headerlink" href="#the-enu-coordinates-are-then-resampled-for-geometric-smoothness-and-to-avoid-large-gaps-which-cause-problems-with-xodr-formats" title="Permalink to this heading"></a></h3>
+<figure class="align-center">
+<img alt="_images/resampleEnuData.png" src="_images/resampleEnuData.png" />
+</figure>
+</section>
+<section id="the-resampled-enu-coordinates-are-then-converted-to-xodr-definition">
+<h3>The resampled ENU coordinates are then converted to XODR definition.<a class="headerlink" href="#the-resampled-enu-coordinates-are-then-converted-to-xodr-definition" title="Permalink to this heading"></a></h3>
+<figure class="align-center">
+<img alt="_images/testTrack_xodrviewer.png" src="_images/testTrack_xodrviewer.png" />
+</figure>
+</section>
+<section id="the-xodr-file-is-then-editable-to-apply-to-different-scenarios-for-example-changing-the-lane-width-below-shows-an-example-of-increasing-the-right-driving-lane-width">
+<h3>The XODR file is then editable to apply to different scenarios, for example, changing the lane width. Below shows an example of increasing the right driving lane width.<a class="headerlink" href="#the-xodr-file-is-then-editable-to-apply-to-different-scenarios-for-example-changing-the-lane-width-below-shows-an-example-of-increasing-the-right-driving-lane-width" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/laneWidth_original.png"><img alt="_images/laneWidth_original.png" src="_images/laneWidth_original.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Original</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/laneWidth_increased.png"><img alt="_images/laneWidth_increased.png" src="_images/laneWidth_increased.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Lane width increased</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="below-shows-another-example-of-increasing-the-right-driving-lane-width-at-500-meters-from-the-start-line">
+<h3>Below shows another example of increasing the right driving lane width at 500 meters from the start line.<a class="headerlink" href="#below-shows-another-example-of-increasing-the-right-driving-lane-width-at-500-meters-from-the-start-line" title="Permalink to this heading"></a></h3>
+<figure class="align-center">
+<img alt="_images/changeLaneWidthDynamically.png" src="_images/changeLaneWidthDynamically.png" />
+</figure>
+</section>
+<section id="xodr-can-be-imported-into-roadrunner">
+<h3>XODR can be imported into RoadRunner.<a class="headerlink" href="#xodr-can-be-imported-into-roadrunner" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/testTrack_xodrviewer.png"><img alt="_images/testTrack_xodrviewer.png" src="_images/testTrack_xodrviewer.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-text">Road imported into XODR viewer (open-source)</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/testTrack_RR.png"><img alt="_images/testTrack_RR.png" src="_images/testTrack_RR.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Road imported into RoadRunner (commercial)</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="roadrunner-exports-into-carla-and-sumo">
+<h3>RoadRunner exports into CARLA and SUMO.<a class="headerlink" href="#roadrunner-exports-into-carla-and-sumo" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/testTrack_xodrviewer.png"><img alt="_images/testTrack_xodrviewer.png" src="_images/testTrack_xodrviewer.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-text">Test track imported into CARLA</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/testTrack_SUMO.png"><img alt="_images/testTrack_SUMO.png" src="_images/testTrack_SUMO.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Test track imported into SUMO</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Project%20activity%20by%20member.html" class="btn btn-neutral float-left" title="Project activity by member" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Penn State Intelligent Vehicles and Systems Group.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
