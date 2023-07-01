@@ -225,13 +225,20 @@ The KML files can be found here: https://github.com/ivsg-psu/FieldDataCollection
 **The ENU coordinates are then resampled for geometric smoothness and to avoid large gaps which cause problems with XODR formats.**
 
 
-.. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/resampleEnuData.png
+.. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrackENU_raw.png
    :align: center
+
+   Raw ENU data of test track
+
+.. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrackENU_resampled.png
+   :align: center
+
+   resampled ENU data of test track
 
 **The resampled ENU coordinates are then converted to XODR definition.**
 
 
-.. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrack_xodrviewer.png
+.. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrack_original.png
    :align: center
 
 **The XODR file is then editable to apply to different scenarios, for example, changing the lane width. Below shows an example of increasing the right driving lane width.** 
@@ -251,7 +258,7 @@ The KML files can be found here: https://github.com/ivsg-psu/FieldDataCollection
 **Below shows another example of increasing the right driving lane width at 500 meters from the start line.**
 
 
-.. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/changeLaneWidthDynamically.png
+.. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrack_changedLaneWidth.png
    :align: center
 
 
@@ -260,7 +267,7 @@ The KML files can be found here: https://github.com/ivsg-psu/FieldDataCollection
 
 +----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 | .. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrack_xodrviewer.png     | .. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrack_RR.png             |
-|    :width: 80%                                                                                                 |    :width: 100%                                                                                                |
+|    :width: 100%                                                                                                |    :width: 100%                                                                                                |
 |    :align: center                                                                                              |    :align: center                                                                                              |
 |                                                                                                                |                                                                                                                |
 |    Road imported into XODR viewer (open-source)                                                                |    Road imported into RoadRunner (commercial)                                                                  |
@@ -269,8 +276,8 @@ The KML files can be found here: https://github.com/ivsg-psu/FieldDataCollection
 **RoadRunner exports into CARLA and SUMO.**
 
 +----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-| .. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrack_xodrviewer.png     | .. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrack_SUMO.png           |
-|    :width: 80%                                                                                                 |    :width: 100%                                                                                                |
+| .. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrack_CARLA.png          | .. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrack_SUMO.png           |
+|    :width: 100%                                                                                                |    :width: 100%                                                                                                |
 |    :align: center                                                                                              |    :align: center                                                                                              |
 |                                                                                                                |                                                                                                                |
 |    Test track imported into CARLA                                                                              |    Test track imported into SUMO                                                                               |

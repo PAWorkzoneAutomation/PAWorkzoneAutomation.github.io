@@ -625,12 +625,17 @@
 <img alt="_images/testTrackENU.png" src="_images/testTrackENU.png" />
 </div>
 <p><strong>The ENU coordinates are then resampled for geometric smoothness and to avoid large gaps which cause problems with XODR formats.</strong></p>
-<div class="figure align-center">
-<img alt="_images/resampleEnuData.png" src="_images/resampleEnuData.png" />
+<div class="figure align-center" id="id8">
+<img alt="_images/testTrackENU_raw.png" src="_images/testTrackENU_raw.png" />
+<p class="caption"><span class="caption-text">Raw ENU data of test track</span></p>
+</div>
+<div class="figure align-center" id="id9">
+<img alt="_images/testTrackENU_resampled.png" src="_images/testTrackENU_resampled.png" />
+<p class="caption"><span class="caption-text">resampled ENU data of test track</span></p>
 </div>
 <p><strong>The resampled ENU coordinates are then converted to XODR definition.</strong></p>
 <div class="figure align-center">
-<img alt="_images/testTrack_xodrviewer.png" src="_images/testTrack_xodrviewer.png" />
+<img alt="_images/testTrack_original.png" src="_images/testTrack_original.png" />
 </div>
 <p><strong>The XODR file is then editable to apply to different scenarios, for example, changing the lane width. Below shows an example of increasing the right driving lane width.</strong></p>
 <table border="1" class="docutils">
@@ -639,12 +644,12 @@
 <col width="50%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><div class="first last figure align-center" id="id8">
+<tr class="row-odd"><td><div class="first last figure align-center" id="id10">
 <a class="reference internal image-reference" href="_images/laneWidth_original.png"><img alt="_images/laneWidth_original.png" src="_images/laneWidth_original.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Original</span></p>
 </div>
 </td>
-<td><div class="first last figure align-center" id="id9">
+<td><div class="first last figure align-center" id="id11">
 <a class="reference internal image-reference" href="_images/laneWidth_increased.png"><img alt="_images/laneWidth_increased.png" src="_images/laneWidth_increased.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Lane width increased</span></p>
 </div>
@@ -654,7 +659,7 @@
 </table>
 <p><strong>Below shows another example of increasing the right driving lane width at 500 meters from the start line.</strong></p>
 <div class="figure align-center">
-<img alt="_images/changeLaneWidthDynamically.png" src="_images/changeLaneWidthDynamically.png" />
+<img alt="_images/testTrack_changedLaneWidth.png" src="_images/testTrack_changedLaneWidth.png" />
 </div>
 <p><strong>XODR can be imported into RoadRunner.</strong></p>
 <table border="1" class="docutils">
@@ -663,12 +668,12 @@
 <col width="50%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><div class="first last figure align-center" id="id10">
-<a class="reference internal image-reference" href="_images/testTrack_xodrviewer.png"><img alt="_images/testTrack_xodrviewer.png" src="_images/testTrack_xodrviewer.png" style="width: 80%;" /></a>
+<tr class="row-odd"><td><div class="first last figure align-center" id="id12">
+<a class="reference internal image-reference" href="_images/testTrack_xodrviewer.png"><img alt="_images/testTrack_xodrviewer.png" src="_images/testTrack_xodrviewer.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Road imported into XODR viewer (open-source)</span></p>
 </div>
 </td>
-<td><div class="first last figure align-center" id="id11">
+<td><div class="first last figure align-center" id="id13">
 <a class="reference internal image-reference" href="_images/testTrack_RR.png"><img alt="_images/testTrack_RR.png" src="_images/testTrack_RR.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Road imported into RoadRunner (commercial)</span></p>
 </div>
@@ -683,12 +688,12 @@
 <col width="50%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><div class="first last figure align-center" id="id12">
-<a class="reference internal image-reference" href="_images/testTrack_xodrviewer.png"><img alt="_images/testTrack_xodrviewer.png" src="_images/testTrack_xodrviewer.png" style="width: 80%;" /></a>
+<tr class="row-odd"><td><div class="first last figure align-center" id="id14">
+<a class="reference internal image-reference" href="_images/testTrack_CARLA.png"><img alt="_images/testTrack_CARLA.png" src="_images/testTrack_CARLA.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Test track imported into CARLA</span></p>
 </div>
 </td>
-<td><div class="first last figure align-center" id="id13">
+<td><div class="first last figure align-center" id="id15">
 <a class="reference internal image-reference" href="_images/testTrack_SUMO.png"><img alt="_images/testTrack_SUMO.png" src="_images/testTrack_SUMO.png" style="width: 100%;" /></a>
 <p class="caption"><span class="caption-text">Test track imported into SUMO</span></p>
 </div>
