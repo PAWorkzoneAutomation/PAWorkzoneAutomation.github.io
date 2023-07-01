@@ -241,6 +241,8 @@ The KML files can be found here: https://github.com/ivsg-psu/FieldDataCollection
 .. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrack_original.png
    :align: center
 
+The xodr file can be found as testTrack.xodr with this link: https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports
+
 **The XODR file is then editable to apply to different scenarios, for example, changing the lane width. Below shows an example of increasing the right driving lane width.** 
 
 
@@ -273,6 +275,8 @@ The KML files can be found here: https://github.com/ivsg-psu/FieldDataCollection
 |    Road imported into XODR viewer (open-source)                                                                |    Road imported into RoadRunner (commercial)                                                                  |
 +----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 
+The xodr file can be found as testTrack.xodr with this link: https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports
+
 **RoadRunner exports into CARLA and SUMO.**
 
 +----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
@@ -283,7 +287,7 @@ The KML files can be found here: https://github.com/ivsg-psu/FieldDataCollection
 |    Test track imported into CARLA                                                                              |    Test track imported into SUMO                                                                               |
 +----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 
-
+The files needed for map imports can be found with this link: https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports
 
 
 
