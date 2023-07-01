@@ -241,7 +241,7 @@ The KML files can be found here: https://github.com/ivsg-psu/FieldDataCollection
 .. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrack_original.png
    :align: center
 
-The xodr file can be found as testTrack.xodr with this link: https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports
+The xodr file can be found as testTrack.xodr with this link: https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports/XODR
 
 **The XODR file is then editable to apply to different scenarios, for example, changing the lane width. Below shows an example of increasing the right driving lane width.** 
 
@@ -263,6 +263,7 @@ The xodr file can be found as testTrack.xodr with this link: https://github.com/
 .. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrack_changedLaneWidth.png
    :align: center
 
+The xodr file can be found as testTrack_increasedLaneWidth.xodr with this link: https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports/XODR
 
 **XODR can be imported into RoadRunner.**
 
@@ -275,7 +276,7 @@ The xodr file can be found as testTrack.xodr with this link: https://github.com/
 |    Road imported into XODR viewer (open-source)                                                                |    Road imported into RoadRunner (commercial)                                                                  |
 +----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 
-The xodr file can be found as testTrack.xodr with this link: https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports
+The xodr file can be found as testTrack.xodr with this link: https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports/XODR
 
 **RoadRunner exports into CARLA and SUMO.**
 
