@@ -60,6 +60,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#year-2">Year 2</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#simulating-construction-scenarios">Simulating construction scenarios</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#simulation-post-processing">Simulation post processing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#automatic-generation-of-work-zone-simulation-scenarios">Automatic generation of work zone simulation scenarios</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#year-3">Year 3</a><ul>
@@ -587,6 +588,149 @@
 <p><span class="caption-text">Demo of vehicle doing a lane change</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+</section>
+<section id="automatic-generation-of-work-zone-simulation-scenarios">
+<h3>Automatic generation of work zone simulation scenarios<a class="headerlink" href="#automatic-generation-of-work-zone-simulation-scenarios" title="Permalink to this heading"></a></h3>
+<p><strong>The automatic generation of scenarios for simulation that follow the workflow as below:</strong></p>
+<figure class="align-center">
+<img alt="_images/AutomaticGenerationOfScenarios.drawio.png" src="_images/AutomaticGenerationOfScenarios.drawio.png" />
+</figure>
+<p>The source file of this workflow diagram can be found here: <a class="reference external" href="https://drive.google.com/file/d/18G0Bb3WNbk9Mf6DgM548p8j4xtOKnf1m/view?usp=sharing">https://drive.google.com/file/d/18G0Bb3WNbk9Mf6DgM548p8j4xtOKnf1m/view?usp=sharing</a></p>
+<p><strong>Scenarios defined in KMZ format are loaded into GIS software, such as Google Earth.</strong></p>
+<figure class="align-center" id="id7">
+<img alt="_images/googleEarth.png" src="_images/googleEarth.png" />
+<figcaption>
+<p><span class="caption-text">This contains all data for the CAD definition, but most of this is not needed within final road definition as per ASAM OpenDRIVE.</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The KMZ files can be found here: <a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_VisualizingFieldData_PlotWorkZone/tree/main">https://github.com/ivsg-psu/FieldDataCollection_VisualizingFieldData_PlotWorkZone/tree/main</a> (IVSG internal)</p>
+<p><strong>The KMZ definition is then parsed to KML, where coordinates are readable.</strong></p>
+<figure class="align-center">
+<img alt="_images/KML_cropped.png" src="_images/KML_cropped.png" />
+</figure>
+<p>The KML files can be found here: <a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_VisualizingFieldData_PlotWorkZone/tree/main">https://github.com/ivsg-psu/FieldDataCollection_VisualizingFieldData_PlotWorkZone/tree/main</a> (IVSG internal)</p>
+<p><strong>The KML definition is parsed in MATLAB. It illustrates driving lanes and traffic objects in LLA coordinate system.</strong></p>
+<figure class="align-center">
+<img alt="_images/testTrackLLA.png" src="_images/testTrackLLA.png" />
+</figure>
+<p><strong>Using the KML data, we can plot all the scenarios with each other to identify common lane markers and road segments.</strong></p>
+<figure class="align-center">
+<img alt="_images/All_lane_markers_plotted_together.png" src="_images/All_lane_markers_plotted_together.png" />
+</figure>
+<p><strong>The driving lanes in LLA coordinates are then transformed into ENU coordinates. This uses the Cartesian coordinates to ease the creation of XODR definitions.</strong></p>
+<figure class="align-center">
+<img alt="_images/testTrackENU.png" src="_images/testTrackENU.png" />
+</figure>
+<p><strong>Non-smooth data points contain large gaps, and this causes problems when the road is created.</strong></p>
+<figure class="align-center" id="id8">
+<img alt="_images/TestTrack_nonSmooth.png" src="_images/TestTrack_nonSmooth.png" />
+<figcaption>
+<p><span class="caption-text">Example of test track created with non-smooth data points</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id9">
+<img alt="_images/TestTrack_RRSmoothError.png" src="_images/TestTrack_RRSmoothError.png" />
+<figcaption>
+<p><span class="caption-text">Problem of misalignment caused by the non-smooth data points</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>The ENU coordinates are then resampled for geometric smoothness to avoid the large gaps</strong></p>
+<figure class="align-center" id="id10">
+<img alt="_images/testTrackENU_raw.png" src="_images/testTrackENU_raw.png" />
+<figcaption>
+<p><span class="caption-text">Raw ENU data of test track</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id11">
+<img alt="_images/testTrackENU_resampled.png" src="_images/testTrackENU_resampled.png" />
+<figcaption>
+<p><span class="caption-text">resampled ENU data of test track</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>The resampled ENU coordinates are then converted to XODR definition.</strong></p>
+<figure class="align-center">
+<img alt="_images/testTrack_original.png" src="_images/testTrack_original.png" />
+</figure>
+<p>The xodr file can be found as testTrack.xodr with this link: <a class="reference external" href="https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports/XODR">https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports/XODR</a></p>
+<p><strong>The XODR file is then editable to apply to different scenarios, for example, changing the lane width. Below shows an example of increasing the right driving lane width.</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="_images/laneWidth_original.png"><img alt="_images/laneWidth_original.png" src="_images/laneWidth_original.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Original</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="_images/laneWidth_increased.png"><img alt="_images/laneWidth_increased.png" src="_images/laneWidth_increased.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Lane width increased</span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Below shows another example of increasing the right driving lane width at 500 meters from the start line.</strong></p>
+<figure class="align-center">
+<img alt="_images/testTrack_changedLaneWidth.png" src="_images/testTrack_changedLaneWidth.png" />
+</figure>
+<p>The xodr file can be found as testTrack_increasedLaneWidth.xodr with this link: <a class="reference external" href="https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports/XODR">https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports/XODR</a></p>
+<p><strong>XODR can be imported into RoadRunner.</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><figure class="align-center" id="id14">
+<a class="reference internal image-reference" href="_images/testTrack_xodrviewer.png"><img alt="_images/testTrack_xodrviewer.png" src="_images/testTrack_xodrviewer.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Road imported into XODR viewer (open-source)</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="_images/testTrack_RR.png"><img alt="_images/testTrack_RR.png" src="_images/testTrack_RR.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Road imported into RoadRunner (commercial)</span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The xodr file can be found as testTrack.xodr with this link: <a class="reference external" href="https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports/XODR">https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports/XODR</a></p>
+<p><strong>RoadRunner exports into CARLA and SUMO.</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><figure class="align-center" id="id16">
+<a class="reference internal image-reference" href="_images/testTrack_CARLA.png"><img alt="_images/testTrack_CARLA.png" src="_images/testTrack_CARLA.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Test track imported into CARLA</span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-center" id="id17">
+<a class="reference internal image-reference" href="_images/testTrack_SUMO.png"><img alt="_images/testTrack_SUMO.png" src="_images/testTrack_SUMO.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Test track imported into SUMO</span><a class="headerlink" href="#id17" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The files needed for map imports can be found with this link: <a class="reference external" href="https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports">https://github.com/PAWorkzoneAutomation/PAWorkzoneAutomation.github.io/tree/main/Data/MapImports</a></p>
 </section>
 </section>
 <section id="year-3">

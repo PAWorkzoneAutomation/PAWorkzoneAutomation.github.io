@@ -222,7 +222,21 @@ The KML files can be found here: https://github.com/ivsg-psu/FieldDataCollection
    :align: center
 
 
-**The ENU coordinates are then resampled for geometric smoothness and to avoid large gaps which cause problems with XODR formats.**
+**Non-smooth data points contain large gaps, and this causes problems when the road is created.**
+
+.. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/TestTrack_nonSmooth.png
+   :align: center
+
+   Example of test track created with non-smooth data points 
+
+.. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/TestTrack_RRSmoothError.png
+   :align: center
+
+   Problem of misalignment caused by the non-smooth data points 
+
+
+
+**The ENU coordinates are then resampled for geometric smoothness to avoid the large gaps**
 
 
 .. figure:: Images/Presentations/AutomaticGenerationOfWorkZoneSimulationScenarios/testTrackENU_raw.png
@@ -234,6 +248,9 @@ The KML files can be found here: https://github.com/ivsg-psu/FieldDataCollection
    :align: center
 
    resampled ENU data of test track
+
+
+
 
 **The resampled ENU coordinates are then converted to XODR definition.**
 
