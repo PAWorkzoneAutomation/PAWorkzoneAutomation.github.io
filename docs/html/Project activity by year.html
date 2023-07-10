@@ -59,6 +59,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#year-2">Year 2</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#simulating-construction-scenarios">Simulating construction scenarios</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#variance-analysis-of-simulation-results">Variance analysis of simulation results</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#simulation-post-processing">Simulation post processing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#automatic-generation-of-work-zone-simulation-scenarios">Automatic generation of work zone simulation scenarios</a></li>
 </ul>
@@ -567,6 +568,32 @@
 </tbody>
 </table>
 </section>
+<section id="variance-analysis-of-simulation-results">
+<h3>Variance analysis of simulation results<a class="headerlink" href="#variance-analysis-of-simulation-results" title="Permalink to this heading"></a></h3>
+<p>The daily volume trends of urban, arterial and highway are summarized below:</p>
+<figure class="align-center">
+<img alt="_images/urban_arterial.png" src="_images/urban_arterial.png" />
+</figure>
+<figure class="align-center">
+<img alt="_images/highway.png" src="_images/highway.png" />
+</figure>
+<p>We did an analysis of variance to check whether simulated flow is the same as the set flow and to find the minimum simulation time.</p>
+<p>The flow is estimated every 1 min. The data used below is right from the peak start time or off-peak start time, from the detector on the test track for two lanes.</p>
+<p>The results are shown as below.</p>
+<figure class="align-center" id="id5">
+<img alt="_images/urbanResults.png" src="_images/urbanResults.png" />
+<figcaption>
+<p><span class="caption-text">Results for urban</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id6">
+<img alt="_images/arterialResults.png" src="_images/arterialResults.png" />
+<figcaption>
+<p><span class="caption-text">Results for arterial</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Analysis for highway is ongoing.</p>
+</section>
 <section id="simulation-post-processing">
 <h3>Simulation post processing<a class="headerlink" href="#simulation-post-processing" title="Permalink to this heading"></a></h3>
 <ul class="simple">
@@ -576,16 +603,28 @@
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/FeatureExtraction_SafetyMetrics_SafetyMetricsClass">FeatureExtraction_SafetyMetrics_SafetyMetricsClass</a>: MATLAB code implementation of functions that perform safety metric calculations given a set of objects and a path through them.</p></li>
 </ul>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id7">
 <img alt="_images/TTC.png" src="_images/TTC.png" />
 <figcaption>
-<p><span class="caption-text">Time to collision</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Time to collision</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id8">
+<img alt="_images/TTCexample.png" src="_images/TTCexample.png" />
+<figcaption>
+<p><span class="caption-text">Example of TTC calculation</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id9">
+<img alt="_images/PETexample.png" src="_images/PETexample.png" />
+<figcaption>
+<p><span class="caption-text">Example of PET calculation</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id10">
 <img alt="_images/lanechange.gif" src="_images/lanechange.gif" />
 <figcaption>
-<p><span class="caption-text">Demo of vehicle doing a lane change</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Demo of vehicle doing a lane change</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -597,10 +636,10 @@
 </figure>
 <p>The source file of this workflow diagram can be found here: <a class="reference external" href="https://drive.google.com/file/d/18G0Bb3WNbk9Mf6DgM548p8j4xtOKnf1m/view?usp=sharing">https://drive.google.com/file/d/18G0Bb3WNbk9Mf6DgM548p8j4xtOKnf1m/view?usp=sharing</a></p>
 <p><strong>Scenarios defined in KMZ format are loaded into GIS software, such as Google Earth.</strong></p>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id11">
 <img alt="_images/googleEarth.png" src="_images/googleEarth.png" />
 <figcaption>
-<p><span class="caption-text">This contains all data for the CAD definition, but most of this is not needed within final road definition as per ASAM OpenDRIVE.</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-text">This contains all data for the CAD definition, but most of this is not needed within final road definition as per ASAM OpenDRIVE.</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The KMZ files can be found here: <a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_VisualizingFieldData_PlotWorkZone/tree/main">https://github.com/ivsg-psu/FieldDataCollection_VisualizingFieldData_PlotWorkZone/tree/main</a> (IVSG internal)</p>
@@ -622,29 +661,29 @@
 <img alt="_images/testTrackENU.png" src="_images/testTrackENU.png" />
 </figure>
 <p><strong>Non-smooth data points contain large gaps, and this causes problems when the road is created.</strong></p>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id12">
 <img alt="_images/TestTrack_nonSmooth.png" src="_images/TestTrack_nonSmooth.png" />
 <figcaption>
-<p><span class="caption-text">Example of test track created with non-smooth data points</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Example of test track created with non-smooth data points</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id13">
 <img alt="_images/TestTrack_RRSmoothError.png" src="_images/TestTrack_RRSmoothError.png" />
 <figcaption>
-<p><span class="caption-text">Problem of misalignment caused by the non-smooth data points</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Problem of misalignment caused by the non-smooth data points</span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p><strong>The ENU coordinates are then resampled for geometric smoothness to avoid the large gaps</strong></p>
-<figure class="align-center" id="id10">
+<figure class="align-center" id="id14">
 <img alt="_images/testTrackENU_raw.png" src="_images/testTrackENU_raw.png" />
 <figcaption>
-<p><span class="caption-text">Raw ENU data of test track</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Raw ENU data of test track</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id11">
+<figure class="align-center" id="id15">
 <img alt="_images/testTrackENU_resampled.png" src="_images/testTrackENU_resampled.png" />
 <figcaption>
-<p><span class="caption-text">resampled ENU data of test track</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+<p><span class="caption-text">resampled ENU data of test track</span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p><strong>The resampled ENU coordinates are then converted to XODR definition.</strong></p>
@@ -659,17 +698,17 @@
 <col style="width: 50%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><figure class="align-center" id="id12">
+<tr class="row-odd"><td><figure class="align-center" id="id16">
 <a class="reference internal image-reference" href="_images/laneWidth_original.png"><img alt="_images/laneWidth_original.png" src="_images/laneWidth_original.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Original</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Original</span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </td>
-<td><figure class="align-center" id="id13">
+<td><figure class="align-center" id="id17">
 <a class="reference internal image-reference" href="_images/laneWidth_increased.png"><img alt="_images/laneWidth_increased.png" src="_images/laneWidth_increased.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Lane width increased</span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Lane width increased</span><a class="headerlink" href="#id17" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </td>
@@ -688,17 +727,17 @@
 <col style="width: 50%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><figure class="align-center" id="id14">
+<tr class="row-odd"><td><figure class="align-center" id="id18">
 <a class="reference internal image-reference" href="_images/testTrack_xodrviewer.png"><img alt="_images/testTrack_xodrviewer.png" src="_images/testTrack_xodrviewer.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Road imported into XODR viewer (open-source)</span><a class="headerlink" href="#id14" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Road imported into XODR viewer (open-source)</span><a class="headerlink" href="#id18" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </td>
-<td><figure class="align-center" id="id15">
+<td><figure class="align-center" id="id19">
 <a class="reference internal image-reference" href="_images/testTrack_RR.png"><img alt="_images/testTrack_RR.png" src="_images/testTrack_RR.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Road imported into RoadRunner (commercial)</span><a class="headerlink" href="#id15" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Road imported into RoadRunner (commercial)</span><a class="headerlink" href="#id19" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </td>
@@ -713,17 +752,17 @@
 <col style="width: 50%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><figure class="align-center" id="id16">
+<tr class="row-odd"><td><figure class="align-center" id="id20">
 <a class="reference internal image-reference" href="_images/testTrack_CARLA.png"><img alt="_images/testTrack_CARLA.png" src="_images/testTrack_CARLA.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Test track imported into CARLA</span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Test track imported into CARLA</span><a class="headerlink" href="#id20" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </td>
-<td><figure class="align-center" id="id17">
+<td><figure class="align-center" id="id21">
 <a class="reference internal image-reference" href="_images/testTrack_SUMO.png"><img alt="_images/testTrack_SUMO.png" src="_images/testTrack_SUMO.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Test track imported into SUMO</span><a class="headerlink" href="#id17" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Test track imported into SUMO</span><a class="headerlink" href="#id21" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </td>
@@ -741,6 +780,61 @@
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_GPSRelatedCodes_RTKCorrectionService">FieldDataCollection_GPSRelatedCodes_RTKCorrectionService</a>: Setting up and using of Real-time kinematic (RTK) via Networked Transport of RTCM via Internet Protocol (NTRIP).(IVSG - PSU internal).</p></li>
 </ul>
 <img alt="_images/BaseStateionsLocation.png" src="_images/BaseStateionsLocation.png" />
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Server ID</p></th>
+<th class="head"><p>Base Station LLA Coordinates</p></th>
+<th class="head"><p>Datumn</p></th>
+<th class="head"><p>Installation Date</p></th>
+<th class="head"><p>Last Calibration Date</p></th>
+<th class="head"><p>Note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>LTI Test Track Base Station</p></td>
+<td><p>PSU_TestTrack</p></td>
+<td><p>TBD</p></td>
+<td><p>WGS 84</p></td>
+<td><p>TBD</p></td>
+<td><p>TBD</p></td>
+<td><p>Installed and maintained by IVSG.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reber 320 Base Station</p></td>
+<td><p>PSU_Reber320</p></td>
+<td><p>40.79365087° -77.86460284° 334.719 m</p></td>
+<td><p>WGS 84</p></td>
+<td><p>11/28/2022</p></td>
+<td><p>01/07/2023</p></td>
+<td><p>Installed and maintained by IVSG, this base station is moveable so it cannot be used as a CORS station</p></td>
+</tr>
+<tr class="row-even"><td><p>Reber 339 Base Station</p></td>
+<td><p>PSU_Reber339</p></td>
+<td><p>40.79333290° -77.86441976° 334.733 m</p></td>
+<td><p>WGS 84</p></td>
+<td><p>11/28/2022</p></td>
+<td><p>01/08/2023</p></td>
+<td><p>Installed and maintained by IVSG, this base station is moveable so it cannot be used as a CORS station</p></td>
+</tr>
+<tr class="row-odd"><td><p>Transportation Research Building Base Station</p></td>
+<td><p>PSU1</p></td>
+<td><p>40.8068919389° -77.8497968306° 337.665 m</p></td>
+<td><p>WGS 84</p></td>
+<td><p>TBD</p></td>
+<td><p>TBD</p></td>
+<td><p>Installed and maintained by PennDOT, its LLA coordinates may not be correct.</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="data-processing">
 <h3>Data Processing<a class="headerlink" href="#data-processing" title="Permalink to this heading"></a></h3>
@@ -748,13 +842,57 @@
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/PAWorkzoneAutomation/FieldDataCollection_GPSRelatedCodes_GPSClass">DataProcessing_GPS_GPSConversionMethods</a>: A repo sharing the algorithms used for GPS conversions, e.g. LLA to ENU (cloned from IVSG on 2023 04 03).</p></li>
 </ul>
+<figure class="align-center" id="id22">
+<img alt="_images/GPSclass.png" src="_images/GPSclass.png" />
+<figcaption>
+<p><span class="caption-text">Example of LLA data collected</span><a class="headerlink" href="#id22" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id23">
+<img alt="_images/lla2enu.png" src="_images/lla2enu.png" />
+<figcaption>
+<p><span class="caption-text">Example of LLA data converted to ENU</span><a class="headerlink" href="#id23" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id24">
+<img alt="_images/lla2xyz.png" src="_images/lla2xyz.png" />
+<figcaption>
+<p><span class="caption-text">Example of LLA data converted to ECEF</span><a class="headerlink" href="#id24" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ivsg-psu/FeatureExtraction_DataTransforms_TransformClassLibrary">FeatureExtraction_DataTransforms_TransformClassLibrary</a>: A repo contains transformation operations typically needed for cartesian data processing.</p></li>
+</ul>
+<figure class="align-center" id="id25">
+<img alt="_images/TransformSensorReading.png" src="_images/TransformSensorReading.png" />
+<figcaption>
+<p><span class="caption-text">Example of transforming sensor reading from the ENU coordinates to sensor coordinates</span><a class="headerlink" href="#id25" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 <section id="maps-and-scenarios">
 <h3>Maps and scenarios<a class="headerlink" href="#maps-and-scenarios" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/ivsg-psu/FieldDataCollection_VisualizingFieldData_PlotWorkZone">FieldDataCollection_VisualizingFieldData_PlotWorkZone</a>: A repo displaying the scenarios and their descriptions. (IVSG - PSU internal)</p></li>
 </ul>
-<img alt="_images/plotWorkZone.png" src="_images/plotWorkZone.png" />
+<figure class="align-center" id="id26">
+<a class="reference internal image-reference" href="_images/plotWorkZone.png"><img alt="_images/plotWorkZone.png" src="_images/plotWorkZone.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-text">Example of lane markers and traffic objects for scenario 1.1</span><a class="headerlink" href="#id26" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id27">
+<a class="reference internal image-reference" href="_images/laneMarkersToBePainted.png"><img alt="_images/laneMarkersToBePainted.png" src="_images/laneMarkersToBePainted.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-text">Plot of all lane markers to be painted on the test track (as per their color and type)</span><a class="headerlink" href="#id27" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id28">
+<img alt="_images/allLaneMarkers.png" src="_images/allLaneMarkers.png" />
+<figcaption>
+<p><span class="caption-text">Plot of all lane markers needed to complete 19 scenarios (overlapping)</span><a class="headerlink" href="#id28" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 <section id="data-collection-for-on-track-tests">
 <h3>Data collection for on-track tests<a class="headerlink" href="#data-collection-for-on-track-tests" title="Permalink to this heading"></a></h3>

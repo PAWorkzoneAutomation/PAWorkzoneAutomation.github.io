@@ -153,6 +153,35 @@ Simulating construction scenarios
    :file: tables/20scenarios.csv
    :header-rows: 1
 
+Variance analysis of simulation results
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The daily volume trends of urban, arterial and highway are summarized below:
+
+.. figure:: Images/VarianceAnalysis/urban_arterial.png
+   :align: center
+
+.. figure:: Images/VarianceAnalysis/highway.png
+   :align: center
+
+We did an analysis of variance to check whether simulated flow is the same as the set flow and to find the minimum simulation time. 
+
+The flow is estimated every 1 min. The data used below is right from the peak start time or off-peak start time, from the detector on the test track for two lanes. 
+
+The results are shown as below.
+
+.. figure:: Images/VarianceAnalysis/urbanResults.png
+   :align: center
+
+   Results for urban 
+
+.. figure:: Images/VarianceAnalysis/arterialResults.png
+   :align: center
+
+   Results for arterial 
+
+Analysis for highway is ongoing. 
+
 Simulation post processing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * `FeatureExtraction_Association_PointToPointAssociation`_: Functions are provided to determine matches between data sets of (X,Y) points, store and compare groups of associated points (patch objects), and determine intersections between patch objects and circular arcs (useful for collision detection).
@@ -165,6 +194,16 @@ Simulation post processing
    :align: center
 
    Time to collision
+
+.. figure:: Images/TTCexample.png
+   :align: center
+
+   Example of TTC calculation
+
+.. figure:: Images/PETexample.png
+   :align: center
+
+   Example of PET calculation
 
 .. figure:: Images/lanechange.gif
    :align: center
@@ -319,6 +358,47 @@ GPS and CORS Calibration
 
 .. image:: Images/BaseStateionsLocation.png
 
+.. list-table:: 
+   :header-rows: 1
+   :widths: 20 20 20 20 20 20 20
+
+   * - Name
+     - Server ID
+     - Base Station LLA Coordinates
+     - Datumn
+     - Installation Date
+     - Last Calibration Date
+     - Note
+   * - LTI Test Track Base Station
+     - PSU_TestTrack
+     - TBD
+     - WGS 84
+     - TBD
+     - TBD
+     - Installed and maintained by IVSG.
+   * - Reber 320 Base Station
+     - PSU_Reber320
+     - 40.79365087° -77.86460284° 334.719 m
+     - WGS 84
+     - 11/28/2022
+     - 01/07/2023
+     - Installed and maintained by IVSG, this base station is moveable so it cannot be used as a CORS station
+   * - Reber 339 Base Station
+     - PSU_Reber339
+     - 40.79333290° -77.86441976° 334.733 m
+     - WGS 84
+     - 11/28/2022
+     - 01/08/2023
+     - Installed and maintained by IVSG, this base station is moveable so it cannot be used as a CORS station
+   * - Transportation Research Building Base Station
+     - PSU1
+     - 40.8068919389° -77.8497968306° 337.665 m
+     - WGS 84
+     - TBD
+     - TBD
+     - Installed and maintained by PennDOT, its LLA coordinates may not be correct.
+
+
 Data Processing 
 ~~~~~~~~~~~~~~~~~
 
@@ -326,12 +406,49 @@ Processing GPS Data
 
 * `DataProcessing_GPS_GPSConversionMethods`_: A repo sharing the algorithms used for GPS conversions, e.g. LLA to ENU (cloned from IVSG on 2023 04 03). 
 
+.. figure:: Images/GPSclass.png
+   :align: center
+
+   Example of LLA data collected 
+
+.. figure:: Images/lla2enu.png
+   :align: center
+
+   Example of LLA data converted to ENU 
+
+.. figure:: Images/lla2xyz.png
+   :align: center
+
+   Example of LLA data converted to ECEF 
+
+* `FeatureExtraction_DataTransforms_TransformClassLibrary`_: A repo contains transformation operations typically needed for cartesian data processing.
+
+.. figure:: Images/TransformSensorReading.png
+   :align: center
+
+   Example of transforming sensor reading from the ENU coordinates to sensor coordinates 
+
 Maps and scenarios 
 ~~~~~~~~~~~~~~~~~~~~~~
 
 * `FieldDataCollection_VisualizingFieldData_PlotWorkZone`_: A repo displaying the scenarios and their descriptions. (IVSG - PSU internal)
 
-.. image:: Images/plotWorkZone.png
+.. figure:: Images/plotWorkZone.png
+   :align: center
+   :width: 80%    
+
+   Example of lane markers and traffic objects for scenario 1.1
+
+.. figure:: Images/plotWZ/laneMarkersToBePainted.png
+   :align: center
+   :width: 80%   
+
+   Plot of all lane markers to be painted on the test track (as per their color and type)  
+
+.. figure:: Images/plotWZ/allLaneMarkers.png
+   :align: center
+
+   Plot of all lane markers needed to complete 19 scenarios (overlapping) 
 
 Data collection for on-track tests 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -385,3 +502,4 @@ Year 4
 .. _FieldDataCollection_GPSRelatedCodes_RTKCorrectionService: https://github.com/ivsg-psu/FieldDataCollection_GPSRelatedCodes_RTKCorrectionService
 .. _FeatureExtraction_Association_PointToPointAssociation: https://github.com/ivsg-psu/FeatureExtraction_Association_PointToPointAssociation
 .. _FeatureExtraction_SafetyMetrics_SafetyMetricsClass: https://github.com/ivsg-psu/FeatureExtraction_SafetyMetrics_SafetyMetricsClass
+.. _FeatureExtraction_DataTransforms_TransformClassLibrary: https://github.com/ivsg-psu/FeatureExtraction_DataTransforms_TransformClassLibrary
