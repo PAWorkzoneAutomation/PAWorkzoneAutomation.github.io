@@ -20,9 +20,19 @@ Decide how to do traffic and vehicle simulations
 
 .. image:: Images/CARLA_day.png
 
+.. raw:: html
+
+    <iframe id="kmsembed-1_ormhb7lf" width="640" height="280" src="https://psu.mediaspace.kaltura.com/embed/secure/iframe/entryId/1_ormhb7lf/uiConfId/41416911/st/0" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="CARLATest"></iframe>
+
+
 * `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithSUMO`_: Launch page to get started with SUMO (cloned from IVSG on 2023 06 05)
 
 .. image:: Images/SUMODemo.png
+
+.. raw:: html
+
+   <iframe id="kmsembed-1_vvkx81fq" width="640" height="360" src="https://psu.mediaspace.kaltura.com/embed/secure/iframe/entryId/1_vvkx81fq/uiConfId/41416911/st/0" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="20230710_SUMO_urban"></iframe>
+
 
 * `TrafficSimulators_GettingStartedWithDifferrentSimulators_GettingStartedWithCARLA-SUMOCosimulation`_: Launch page to get started with CARLA-SUMO cosimulation (IVSG - PSU internal)
 
@@ -152,6 +162,7 @@ Simulating construction scenarios
 .. csv-table:: 20 Scenarios - 3 Situations Sumamry
    :file: tables/20scenarios.csv
    :header-rows: 1
+
 
 Variance analysis of simulation results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
